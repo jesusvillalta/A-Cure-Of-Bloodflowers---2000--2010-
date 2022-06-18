@@ -1,0 +1,72 @@
+<html><head>
+
+
+<script type="text/javascript" src="contacts_iframe_data/bt_common.js"></script>
+<script type="text/javascript">
+
+var mUserCacheData = new Object();
+var mLoadDone = true;
+
+function init() {
+
+  mUserCacheData.user_id = "200000000831521";
+  mUserCacheData.user_name = "vierkof1.excite";
+  mUserCacheData.enterprise_id = "10000032";
+  mUserCacheData.enterprise_name = "excite";
+  mUserCacheData.enterprise_website = "webmail.excite.com";
+  mUserCacheData.enterprise_logout = "";
+  mUserCacheData.enterprise_show_signout = "1";
+  mUserCacheData.gui = "/gui/thm_gradient_quartz";
+  mUserCacheData.timezone = "28";
+  mUserCacheData.timezone_diff = "-4";
+  mUserCacheData.user_type = "2";
+  mUserCacheData.user_status = "1001";
+  mUserCacheData.color_primary = "";
+  mUserCacheData.color_secondary = "";
+  mUserCacheData.color_tertiary = "";
+  mUserCacheData.date_prefs = "%m/%d/%Y";
+  mUserCacheData.time_prefs = "%I:%M %p";
+  mUserCacheData.session_id = "20080720031509793174211";
+  mUserCacheData.access_securesend = "False";
+  mUserCacheData.access_email = "True";
+  mUserCacheData.access_tasks = "True";
+  mUserCacheData.access_calendar = "True";
+  mUserCacheData.access_im = "False";
+  mUserCacheData.access_files = "False";
+  mUserCacheData.access_calendar_sharing = "False";
+  mUserCacheData.access_contact_sharing = "False";
+  mUserCacheData.access_file_sharing = "False";
+  mUserCacheData.access_beta_calendar = "False";
+  mUserCacheData.root_dir = "/571aa3d6";
+
+}
+
+function getUserPreferences( handler ) {
+  try {
+    eval( handler );
+  }
+  catch ( e ) {
+    try {
+      console.log( 'Unable to execute: ' + handler );
+    }
+    catch ( e1 ) { }
+  }
+}
+
+function getData() {
+
+  return mUserCacheData;
+}
+
+function setUserPreferences( handler, prefs ) {
+
+  mUserCacheData = prefs;
+  setTimeout( handler, 0 );
+}
+
+function refreshPreferences() {
+
+  setTimeout( "self.document.location.reload(true);", 1000 );
+}
+
+</script></head><body onLoad="init()"></body></html>

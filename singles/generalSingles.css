@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+#capaGeneralSingles {
+	padding: 0 0 0 0; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	width: 100%;
+	height: 420px;
+	overflow: auto;
+	text-align:left;
+	background-color:#000000;
+}	
+body {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	scrollbar-face-color:#000000;
+	scrollbar-highlight-color:#000000;
+	scrollbar-3dlight-color:#FFFFFF;
+	scrollbar-darkshadow-color:#000000;
+	scrollbar-shadow-color:#000000;
+	scrollbar-arrow-color:#FFFFFF;
+	scrollbar-track-color:#FFFFFF;
+}
+a:link {
+	color: #FFFFFF;
+}
+a:visited {
+	color: #FFFFFF;
+}
+a:active {
+	color: #FFFFFF;
+}
+.fondotablas{
+	background-color:#FFFFFF;
+	}
+.mano {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+}
+div.explicacion {
+	text-align: justify;
+	margin:10px 10px 10px 10px;	/*margin: 15px 10px 0px 10px;*/
+	height: 100%;
+}
+
+.discos img{
+	margin:10px 10px 10px 10px;
+}
+.fecha_negrita {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #F7D2A8;
+	font-size: 9px;
+	font-weight: bold;
+}
+.fecha {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #EB8B21;
+	font-size: 10px;
+	font-weight: bold;
+}
+div .tituloSingle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 14px;
+	padding-left: 10px;
+}
+.canciones {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.nc {
+	font-size: small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #D6C3BC;
+	font-weight: bold;
+}
+.resaltado {
+	color: #006600;
+	font-weight: bold;
+}

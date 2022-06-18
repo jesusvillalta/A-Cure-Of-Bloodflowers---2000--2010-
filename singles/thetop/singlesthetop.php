@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>A Cure Of Bloodflowers - The Cure - Singles - The Top</title>
+<link rel="stylesheet" href="../../general.css" type="text/css" />
+<link rel="stylesheet" href="../generalSinglesPrincipales.css" type="text/css" />
+</head>
+<body class="oneColFixCtrHdr">
+<div id="container">
+<div id="header">
+  <?php include("../../principales/menu_acob.html");?>
+</div>
+<?php include("../singlesindice.htm");?>
+<div id="capaGeneralSingles" style="background-image:url(../fondosSingles/singlestopfondo.jpg)">
+   <table width="82%" height="75" border="0" align="center" cellpadding="0" cellspacing="0">
+     <tr>
+<td height="30" align="right" valign="bottom" style="background-color:transparent"><div align="left"><span style="font-size:18px; font-family: Arial, Helvetica, sans-serif; color: #CC0000; margin-right: 5px;"> <span class="single" style="color:#FFFFFF">Singles </span> <span style="background-color: none"><span style="color:#3C76DC; font-size:36px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"><span style="font-weight:100; color: #FFCEA3;"><img src="../../discografia/fotoindice/top.gif" alt="The Top" width="30" height="30" border="0" /></span></span></span></span><span style="color:#3064BC; font-size:36px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"> The Top </span><span style="font-weight:100; color: #E46F32;">(1984)</span></div></td>
+     </tr></table>
+   <br />
+   <br />
+    <br />
+    <br />
+  <table width="82%" border="0" align="center" cellpadding="0" cellspacing="0" class="fondotablas">
+    <tr>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_supizq.jpg" alt="esquina" width="10" /></td>
+      <td style="width:100%;"></td>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_supder.jpg" alt="esquina" width="10" /></td>    </tr>  </table>
+  <table width="82%" align="center" class="fondotablas">
+    <tr>
+     <td valign="top">
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+         <td width="221" valign="top" style="height:0px"><div class="discos" align="left"><img src="thetopdiscography_archivos/topsingle.jpg" alt="The Caterpillar " name="a" width="250" height="250" id="a" /></div></td>
+         <td width="566" valign="top"><div align="left" class="tituloSingle">
+        The Caterpillar <span class="fecha_negrita"> (Mayo/84)</span></div>
+         <div style="width:100%" class="carasb">
+           <br />
+           <br />
+           <br />
+             <span class="nc">Canciones:</span>
+            <ul>
+              <li><span class="canciones">The Caterpillar </span></li>
+              <li><span class="canciones">Happy The Man </span> <span class="nCatalogo">(b-side)</span></li>
+              <li><span class="canciones">Throw Your Foot </span> <span class="nCatalogo"> (b-side 12" only)</span></li>
+            </ul>
+        </div>           </td>       
+       </tr>
+       <tr>
+         <td colspan="2" style="height:0px"><div align="center"><img src="../division.jpg" alt="division" width="100%" />
+         </div>
+           <div class="explicacionDoble" style="float:left">
+           <span class="nc">N&uacute;meros 
+             de cat&aacute;logo:</span><br />
+             <br />
+              7" UK FICS 20</font></a><br>
+              7" UK FICSP 20 (picture disc)</a> <br>
+              7" Netherlands <br>
+              <a href="singlesthetopesp.php#2">7" Spain 821 458 7</a> <br>
+              <a href="singlesthetopesp.php#2">7" Italy AS 5000 676 (juke box promo)</a><br>
+              7" Australia 7-259585</div>
+             <div align="left" class="explicacionDoble" style="float:right"><br />
+               <br />
+              7" Japan VAP 15005-07 (+insert) <br>
+              <a href="singlesthetopesp.php#2">12" UK FICSX 20</a> <br>
+              12" France 821 458 1<br>
+              12" Netherlands 821 458-1 <br>
+              12" New Zealand 0-259584 <br>
+              12" Australia 0-259584</div></td>
+         </tr>
+</table></td>    </tr>  </table>
+  <table width="82%" border="0" align="center" cellpadding="0" cellspacing="0" class="fondotablas">
+    <tr>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_infizq.jpg" alt="esquina" width="10" /></td>
+      <td style="width:100%;"></td>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_infder.jpg" alt="esquina" width="10" /></td></tr></table>
+    <br />
+    <br />
+    <br />
+</div>
+<div id="footer">
+  <?php include("../../principales/pie_acob.html");?>
+</div>
+<!-- end #container -->
+</div>
+</body>
+</html>

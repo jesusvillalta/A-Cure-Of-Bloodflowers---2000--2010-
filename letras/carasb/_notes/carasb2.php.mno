@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MMGuideColor" value="#00FF00" />
+	<infoitem key="MMGuideVisible" value="false" />
+	<infoitem key="MMGuideLocked" value="false" />
+	<infoitem key="MMSnapToGuide" value="true" />
+	<infoitem key="MMGuidesSnapToElements" value="true" />
+	<infoitem key="MMDistanceColor" value="#0000FF" />
+	<infoitem key="UD_carasb" value="name:cbOrden;datatype:int,name:cbAnio;datatype:int,name:cbTitulo;datatype:blob,name:cbDisco;datatype:blob,name:cbComentario;datatype:blob,name:cbLetraUk;datatype:blob,name:cbLetraEs;datatype:blob" />
+	<infoitem key="UD_porDisco" value="name:cbDisco;datatype:blob" />
+	<infoitem key="UD_carasb_porDisco" value="name:cbOrden;datatype:int,name:cbAnio;datatype:int,name:cbTitulo;datatype:blob,name:cbDisco;datatype:blob,name:cbComentario;datatype:blob,name:cbLetraUk;datatype:blob,name:cbLetraEs;datatype:blob" />
+	<infoitem key="MMGuideCount" value="0" />
+</info>

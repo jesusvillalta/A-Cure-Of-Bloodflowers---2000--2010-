@@ -1,0 +1,80 @@
+/*Cuerpo*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 8px;
+	margin-top: 6px;
+	scrollbar-face-color:#ffffff;
+	scrollbar-highlight-color:#ffffff;
+	scrollbar-3dlight-color:#D9D9D7;
+	scrollbar-darkshadow-color:#F7E093;
+	scrollbar-shadow-color:#ffffff;
+	scrollbar-arrow-color:#D9D9D7;
+	scrollbar-track-color:#DBDBDB;
+}
+/*Menús*/
+.discogrtitulo {
+	display: block;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #cccccc;
+	background-color:#FFFFFF;
+	font-size: 12px;
+	padding: 0px 0px 0px 0px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+a.discg_men3link:link{
+	display: block;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #cccccc;
+	font-size: 12px;
+	background-image:url(../Untitled1/fondoboton1.jpg);
+	padding: 0px 0px 0px 0px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	background-color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a.discg_men3link:visited{
+	display: block;
+	border-top: 1px solid white;
+	border-bottom: 1px solid #cccccc;
+	font-size: 12px;
+	padding: 0px 0px 0px 0px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	background-color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a.discg_men3link:hover{
+	display: block;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #cccccc;
+	background-color: #FFFFCC;
+	background-image: none;
+	padding: 0px 0px 0px 0px;
+	font-size: 12px;
+	text-decoration: none;
+	text-align: center;
+	color: #21536A;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#discg_men3linkinactivo {
+	border-top: 1px solid white;
+	border-bottom: 1px solid #cccccc;
+	font-size: 12px;
+	padding: 0px 0px 0px 0px;
+	color: #999999;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: center;
+	background-color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+}

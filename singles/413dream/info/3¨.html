@@ -1,0 +1,1005 @@
+<html><head>
+	
+		<script type="text/javascript">
+			/*
+				Because this is a popup, the resource manager is not needed to load files in.
+				However, all javascript files notify the resource manager when they finish
+				loading, so in order to prevent undefined errors, we need to define a simple
+				stub to ignore that behavior.
+			*/
+			function JavaScriptResource() {}
+			JavaScriptResource.notifyComplete = function() {}
+
+			// Patch to ignore firebug console
+			if (document.all || console == undefined) {
+				var console = function() { }
+				console.log = function() { }
+			}
+		</script><!--
+		<script type="text/javascript" src="./lib/components/Component.ToolBar.js"></script>
+		<script type="text/javascript" src="./lib/components/Component.ToolTip.js"></script>
+		<script type="text/javascript" src="./lib/components/Component.OptionBox.js"></script>
+		<script type="text/javascript" src="./lib/components/Component.ContextMenu.js"></script>
+		<script type="text/javascript" src="./lib/components/Component.Button.js"></script>
+		<script type="text/javascript" src="./lib/components/Component.SmartHandler.js"></script>
+		<script type="text/javascript" src="./lib/listeners/Listener.CursorMonitor.js"></script>
+		<script type="text/javascript" src="./lib/listeners/Listener.EventListener.js"></script>
+		<script type="text/javascript" src="./lib/listeners/Listener.Hotkey.js"></script>
+		<script type="text/javascript" src="./lib/behaviors/Behavior.Fader.js"></script>
+		<script type="text/javascript" src="./lib/controllers/Controller.ResourceManager.js"></script>
+		-->
+		
+		<script type="text/javascript" src="3%C2%A8_files/btCore.js"></script><!-- <script type="text/javascript" src="./src/Applications/Email/objects/Object.Message.js"></script> -->
+		
+		<script type="text/javascript" src="3%C2%A8_files/btAppEmailCore.js"></script>
+		<script type="text/javascript" src="3%C2%A8_files/Component_002.js"></script>
+		<script type="text/javascript" src="3%C2%A8_files/Component.js"></script><!--
+		<link rel="stylesheet" href="Component.OptionBox.css" type="text/css">
+		<link rel="stylesheet" href="Component.ToolBar.css" type="text/css">
+		<link rel="stylesheet" href="Component.ToolTip.css" type="text/css">
+		<link rel="stylesheet" href="Component.Button.css" type="text/css">
+		<link rel="stylesheet" href="Component.ContextMenu.css" type="text/css">
+		<link rel="stylesheet" href="Common.css" type="text/css">
+		-->
+		
+		<link rel="stylesheet" href="3%C2%A8_files/btCore.css" type="text/css">
+		<style type="text/css">
+			TD {
+				font-family: Arial;
+				font-size: 12px;
+				color: #333333;
+			}
+
+			TD LABEL {
+				font-weight: bold;
+			}
+
+			BODY {
+				overflow:auto;
+			}
+
+			td.tall_header {
+				vertical-align: top;
+			}
+
+			div.recipients {
+				height: 45px;
+				overflow: auto;
+			}
+
+			@media print {
+
+				BODY {
+					size:auto;
+					overflow:visible;
+				}
+
+				#tools {
+					display:none;
+				}
+
+				#messageBody {
+					position:static;
+				}
+
+				div.recipients {
+					height: auto;
+				}
+
+			}
+		</style></head><body onload="init()">
+		<div id="tools"><div style="height: 25px; width: 623px;" class="ToolBar"><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 50px;" class="GenericButton"><div style="height: 20px;" class="LabelButton_Label"><div style="line-height: 20px; height: 20px;">Reply</div></div></div></div><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 50px;" class="GenericButton"><div style="height: 20px;" class="LabelButton_Label"><div style="line-height: 20px; height: 20px;">Reply All</div></div></div></div><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 50px;" class="GenericButton"><div style="height: 20px;" class="LabelButton_Label"><div style="line-height: 20px; height: 20px;">Forward</div></div></div></div><div style="height: 18px; margin-top: 1px; float: left;" class="ToolBarDivider">&nbsp;</div><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 72px;" class="GenericButton"><div style="height: 20px;" class="LabelButton_Label"><div style="line-height: 20px; height: 20px;">Full Headers</div></div></div></div><div style="height: 18px; margin-top: 1px; float: left;" class="ToolBarDivider">&nbsp;</div><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 20px;" class="GenericButton"><div class="GenericButton" style="margin: 2px; padding: 0pt; width: 16px; height: 16px;"><div style="width: 16px; height: 16px;" class="ToolBar_icon_save">&nbsp;</div></div></div></div><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 50px;" class="GenericButton"><div style="width: 28px;" class="IconLabelButton_Label"><div style="line-height: 20px; height: 20px;">Print</div></div><div style="width: 16px; height: 16px; margin-left: 2px; margin-top: 2px; float: left;" class="ToolBar_icon_print">&nbsp;</div></div></div><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 20px;" class="GenericButton"><div class="GenericButton" style="margin: 2px; padding: 0pt; width: 16px; height: 16px;"><div style="width: 16px; height: 16px;" class="ToolBar_icon_delete">&nbsp;</div></div></div></div><div style="height: 18px; margin-top: 1px; float: left;" class="ToolBarDivider">&nbsp;</div><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 60px;" class="GenericButton"><div style="height: 14px; margin-top: 3px;" class="Button_context_trigger">&nbsp;</div><div style="height: 20px;" class="LabelButton_Label"><div style="line-height: 20px; height: 20px;">Flag As</div></div></div></div><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 60px;" class="GenericButton"><div style="height: 20px;" class="LabelButton_Label"><div style="line-height: 20px; height: 20px;">Move To</div></div></div></div><div style="display: none;" class="ToolBar_context"><div style="height: 22px; float: left;" class="ToolBarButton_normal"><div title="" style="height: 20px; width: 11px;" class="GenericButton"><div style="margin: 1px 0px; padding: 0pt; width: 11px; height: 17px;"><div style="width: 11px; height: 17px;" class="ToolBar_context_button">&nbsp;</div></div></div></div></div></div></div>
+		<div id="importance" class="AllowPrint"><div style="clear: both;"></div></div>
+		<div id="backtotop" style="padding: 10px; display: none;"><div style="height: 1px; float: left; width: 100%;" class="ToolBarButton_normal"><div title="" style="height: 17px; width: 100%;" class="GenericButton"><div style="height: 17px;" class="LabelButton_Label"><div style="line-height: 17px; height: 17px;">Back to top message</div></div></div></div></div>
+		<div id="header" style="padding: 10px 15px 0px;" class="AllowPrint"><table border="0" cellpadding="2" cellspacing="0"><tbody><tr><td><label>Date:</label></td><td>07/24/2008 09:54 AM</td></tr><tr><td><label>From:</label></td><td>"HispaCure The Cure fan club Spain" &lt;hispacure@hispacure.com&gt;</td></tr><tr><td><label>Subject:</label></td><td>THE CURE ES Nº1 EN ESPAÑA CON SLEEP WHEN I'M DEAD. INFO 4º SINGLE "THE PERFECT BOY" !!!</td></tr><tr><td class="tall_header"><label>To:</label></td><td>ACOB</td></tr></tbody></table></div>
+		<div id="messageBody" style="padding: 15px; position: relative;" class="AllowPrint">
+Este es un correo que le ha enviado el administrador del sitio Web "HispaCure: The Cure Fan Club Spain"
+ha sido enviado a la direccion ACOB, usuario acob
+<br>
+<br>
+
+<p>&nbsp;</p>
+<p>HOLA HISPACURADOS !!!!!!!!!!!!</p>
+<p>&nbsp;</p>
+<p><a target="_blank" href="http://www.youtube.com/watch?v=WqIU6agWD80">http://www.youtube.com/watch?v=WqIU6agWD80</a></p>
+<p>(Vídeo Oficial para MTV de "Sleep when i'm dead")</p>
+<p>&nbsp;</p>
+<p>El <strong>3º sencillo</strong> extraído del Nuevo álbum de <strong>The Cure </strong>&#8220;<strong>Sleep when i&#8217;m Dead</strong>&#8221; ha alcanzado el <strong>Nº 1 en la lista Oficial de Singles Española</strong> en su <strong>2º semana </strong>en lista.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="3%C2%A8_files/swidcover.jpg" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>De esta forma, los <strong>tres singles editados </strong>hasta el momento pertenecientes al nuevo álbum de <strong>The Cure </strong>(<strong>The Only One, Freakshow y Sleep when I&#8217;m Dead</strong>), han conseguido llegar al <strong>Nº1 de la lista Oficial de singles </strong>en nuestro país.</p>
+<p>&nbsp;</p>
+<p>Os recordamos que el próximo <strong>13 de Agosto </strong>se pondrá a la venta el último de los <strong>4 singles que The Cure tiene previsto editar previo lanzamiento del nuevo álbum</strong> coincidiendo con los <strong>días 13 </strong>de cada mes. Esperamos que el nuevo sencillo &#8220;<strong>The Perfect Boy</strong>&#8221; llegue del mismo modo a lo más alto de nuestra lista de éxitos.</p>
+<p>&nbsp;</p>
+<p>Esta es la <strong>Lista Oficial de Singles Española</strong> donde<strong> Freakshow </strong>se mantiene en el <strong>Nº3</strong> en su 5º semana en lista, y <strong>The Only One </strong>en el <strong>Nº4</strong> en su 10º semana en Lista.</p>
+<p>&nbsp;</p>
+<p><a target="_blank" href="http://www.promusicae.com/listassemanales/singles/TOP%2020%20SINGLES%20Y%20MAX-%20Week%2029.pdf"><font color="#ff0000">http://www.promusicae.com/listassemanales/singles/TOP%2020%20SINGLES%20Y%20MAX-%20Week%2029.pdf</font></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>POR OTRA PARTE . . .</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="3%C2%A8_files/perfectboycover.jpg" alt=""></p>
+<p>&nbsp;</p>
+<p>(Esta es la portada del Nuevo Sencillo de The Cure)</p>
+<p>&nbsp;</p>
+<p>El Próximo <strong>13 de Agosto de 2008</strong>, se pone a la venta internacionalmente el<strong> 4º Sencillo</strong> extraído del <strong>Nuevo Álbum</strong> de <strong>The Cure</strong> &#8220;<strong>The Perfect Boy</strong>&#8220;. El nuevo single vendrá acompañado de una <strong>Cara B inédita</strong> titulada &#8220;<strong>Without You</strong>&#8220;.</p>
+<p>&nbsp;</p>
+<p>Se trata del <strong>último de los cuatro sencillos</strong> que <strong>The Cure</strong> tenía planeado editar cada <strong>Día 13 de los meses previos al lanzamiento del nuevo trabajo de los de Robert Smith</strong>. Os Recordamos que hasta el momento ya han sido editados &#8220;<strong>The Only One</strong>&#8221; (13 de Mayo), <strong>&#8220;Freakshow&#8221;</strong> (13 de Junio) y <strong>&#8220;Sleep When I&#8217;m Dead&#8221;</strong> (13 de Julio).</p>
+<p>&nbsp;</p>
+<p>Tal y como os informamos desde <strong>hispaCure</strong>, el <strong>Nuevo álbum de The Cure</strong> (previsto para septiembre), ha sido retrasado hasta el próximo <strong>13 de Octubre de 2008</strong>. En su lugar, el <strong>13 de Septiembre</strong> verá la Luz un <strong>EP Especial</strong> que contendrá <strong>versiones inéditas remezcladas de los cuatro nuevos singles</strong> extraídos hasta el momento del <strong>Nuevo álbum</strong>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Esperamos vuestros comentarios sobre esta noticia en la sección de <strong>LAS NOTICIAS DE LOS CURE</strong> de nuestro <strong>FORO OFICIAL</strong>:</p>
+<p>&nbsp;</p>
+<p><a target="_blank" href="http://www.hispacure.com/foro/"><font color="#ff0000">http://www.hispacure.com/foro/</font></a></p>
+<p>&nbsp;</p>
+
+<br>
+------------------------------------------------------------------------------
+<br>
+HispaCure.com - hispacure@hispacure.com
+</div>
+		<iframe src="3%C2%A8_files/blank.htm" style="display: none;" id="download_frame"></iframe>
+	<script type="text/javascript">
+
+		var _LITE_ = window.opener.top._LITE_;
+
+		ApplicationEmail = window.opener.top.ApplicationEmail;
+		ApplicationContacts = window.opener.top.ApplicationContacts;
+
+		var tool_bar;
+		var params;
+		var print_timer;
+		var close_after_print = false;
+		var top_window = window.opener;
+		var tool_bar_loaded = false;
+		var action_images_div;
+		var user_prefs;
+		var importanceDiv;
+
+		if(top_window.ApplicationEmail.email_window_params[window.name] == undefined) {
+			top_window = window.opener.opener;
+		}
+
+		/**
+		 * Bug: 135102
+		 *
+		 * Remember the selected email object from the grid, to be used in
+		 * reference to Reply, Reply All, and Forward.
+		 */
+ 		var Sel = top_window.ApplicationEmail.getDataModel().getSelectedMessages();
+		var EmailSelection = Sel[0];
+
+		var selected_indexes = top_window.ApplicationEmail.getDataModel().parent().selectedIndexes();
+
+		function openFullHeaders() {
+			top_window.EmailPreview.openHeaders();
+			top_window.focus();
+		}
+
+		// Global function to handle links in the email contents
+		function openSendEmail( address, subject, emid, fid, emidtype, ishtml, att_list ) {
+			top_window.EmailPreview.handleEmailClick( address, att_list, self );
+		}
+
+		window.onresize = function() {
+			var w = CursorMonitor.clientWidth();
+			tool_bar.width(w);
+			// Fix for #142071:  Reset the importance notice width to match the tool bar's new width
+			importanceDiv.style.width = ( document.all ? tool_bar.width() : tool_bar.width() - 12);
+		}
+
+		function downloadAttachment(folder_id, message_id, attachment_id, message_attachment_id) {
+			document.getElementById( 'download_frame' ).src =
+				"/cgi-bin/emailGetAttachment.cgi?act=11&unm=" +
+				user_prefs[ 'user_name' ] + "&sid=" +
+				user_prefs[ 'session_id' ] + "&msgid=" +
+				message_id + "&fid=" + folder_id + "&attemid=" +
+				message_attachment_id + "&attid=" + 
+				attachment_id
+		}
+
+		function openVcardAttachment( folder_id, message_id, attachment_id, parent_id) {
+
+			var element = document.getElementById( folder_id + "/" +
+					message_id + "/" + attachment_id );
+
+			if( element != undefined ) {
+
+				var left = element.offsetLeft;
+				var top = element.offsetTop + element.offsetHeight;
+				var temp = element.offsetParent;
+
+				while( temp != null ) {
+					left += temp.offsetLeft;
+					top += temp.offsetTop;
+					temp = temp.offsetParent;
+				}
+
+
+				vcard = window.opener.ApplicationEmail.current_vcard = new Object();
+				vcard.folder_id = folder_id;
+				vcard.message_id = message_id;
+				vcard.attachment_id = attachment_id;
+				vcard.parent_id = parent_id;
+
+
+				var m =  new ContextMenu( 140 );
+
+
+
+				// 134338 - only offer to add vCard if available in contacts
+				var allow = false;
+				try {
+
+					if( typeof window.opener.ApplicationOldContacts != 'undefined') {
+						allow = true;
+					}
+				} catch (e) { }
+				try {
+					if (window.opener.ApplicationContacts && window.opener.ApplicationContacts.loadAllForContactFieldsFromAttachment) {
+						allow = true;
+					}
+
+				} catch (e) { }
+
+				if (allow) {
+					m.addItem( new ContextMenuItem( "Add to My Contacts", true, window.opener.ApplicationEmail.handleVcardAdd ) );
+				}
+				m.addItem( new ContextMenuItem( "Download File", true, window.opener.ApplicationEmail.handleVcardDownload ) );
+				m.show( left, top );
+
+			}
+
+		}
+
+		function openIcalAttachment( folder_id, message_id, attachment_id, parent_id) {
+
+			var element = document.getElementById( folder_id + "/" +
+					message_id + "/" + attachment_id );
+
+			if( element != undefined ) {
+
+				var left = element.offsetLeft;
+				var top = element.offsetTop + element.offsetHeight;
+				var temp = element.offsetParent;
+
+				while( temp != null ) {
+					left += temp.offsetLeft;
+					top += temp.offsetTop;
+					temp = temp.offsetParent;
+				}
+
+
+				ical = window.opener.ApplicationEmail.current_ical = new Object();
+				ical.folder_id = folder_id;
+				ical.message_id = message_id;
+				ical.attachment_id = attachment_id;
+				ical.parent_id = parent_id;
+
+
+				var m =  new ContextMenu( 140 );
+
+				var message = params["message"];
+				if(message.meetingRequestId() != 0)
+				{
+					m.addItem(new ContextMenuItem("Accept", true, handleIcalAccept));
+					m.addItem(new ContextMenuItem("Decline", true, handleIcalDecline));
+					m.addItem(new ContextMenuItem("Mark as Tentative", true, handleIcalMarkTentative));
+					m.addItem(new ContextMenuDivider());
+				}
+				m.addItem(new ContextMenuItem("Add to My Calendar", true, window.opener.ApplicationEmail.handleIcalAddClick));
+				m.addItem(new ContextMenuItem("View Event", true, handleIcalViewClick));
+				m.addItem(new ContextMenuItem("Download File", true, window.opener.ApplicationEmail.handleIcalDownload));
+
+				m.show( left, top );
+			}
+
+		}
+
+		/**
+		 * Set the callback for accepting a meeting request that came as ical
+		 */
+		function handleIcalAccept()
+		{
+			var message = params["message"];
+			var mreqId = message.meetingRequestId();
+			if(mreqId != 0)
+			{
+				window.opener.ApplicationEmail.updateMeetingRequest(mreqId, 2);
+				window.close();
+			}
+		}
+
+		/**
+		 * Set the callback for declining a meeting request that came as ical
+		 */
+		function handleIcalDecline()
+		{
+			var message = params["message"];
+			var mreqId = message.meetingRequestId();
+			if(mreqId != 0)
+			{
+				window.opener.ApplicationEmail.updateMeetingRequest(mreqId, 4);
+				window.close();
+			}
+		}
+		
+		/**
+		 * Set the callback for marking as tenative a meeting request that came as ical
+		 */
+		function handleIcalMarkTentative()
+		{
+			var message = params["message"];
+			var mreqId = message.meetingRequestId();
+			if(mreqId != 0)
+			{
+				window.opener.ApplicationEmail.updateMeetingRequest(mreqId, 3);
+				window.close();
+			}
+		}		
+
+		/**
+		 * Set the callback for viewing ical event
+		 */
+		function handleIcalViewClick()
+		{
+			var message = params["message"];
+			var mreqId = message.meetingRequestId();
+			if(mreqId != 0)
+			{
+				window.opener.ApplicationEmail.openCalendarEvent(mreqId);
+			}
+			else
+			{
+				window.opener.ApplicationEmail.handleIcalViewClick();
+			}
+			window.close();
+		}		
+
+		/**
+		 * Bug: 135102
+		 *
+		 * Added 'EmailSelection' parameter to the following three function
+		 * calls to compensate for having multiple Email.Print windows open
+		 * as well as the non-pop-up Email viewing window.
+		 */
+		function handleReply() {
+			window.opener.ApplicationEmail.handleReply(self, EmailSelection);
+		}
+
+		function handleReplyAll() {
+			window.opener.ApplicationEmail.handleReplyAll(self, EmailSelection);
+		}
+
+		function handleForward() {
+			window.opener.ApplicationEmail.handleForward(self, EmailSelection);
+		}
+
+		function handleDelete() {
+			ApplicationEmail.handleDeleteValidate(Sel);
+			window.close();
+		}
+
+		/**
+		 * Handle for responding to message request
+		 */
+		function handleMreqResponse() {
+			// The actual work to handle response to meeting 
+			// request is done in ApplicationEmail, 
+			// here we will just close the window
+			window.close();
+		}
+		function handleEmailSaveToFile() {
+			ApplicationEmail.MoveSaveTarget = ApplicationEmail.i_folder_ref[EmailSelection.folder_id()];
+			ApplicationEmail.MoveSaveSelection = Sel;
+			ApplicationEmail.MoveSaveType = 4;
+			ApplicationEmail.createMoveSaveDialog(4, Sel);
+
+			top_window.focus();
+		}
+
+		function handleEmailMoveTo() {
+			ApplicationEmail.MoveSaveSelection = Sel;
+			ApplicationEmail.MoveSaveType = 2;
+			ApplicationEmail.createMoveSaveDialog(2, Sel);
+
+			top_window.focus();
+			window.close();
+		}
+
+		var junk_dropdown;
+		var njunk_dropdown;
+
+		function handleMarkRead() {
+			ApplicationEmail.handleMarkReadValidate(Sel, selected_indexes);
+		}
+
+		function handleMarkUnread() {
+			ApplicationEmail.handleMarkUnreadValidate(Sel, selected_indexes);
+		}
+
+		function handleJunk() {
+			ApplicationEmail.store.junkMessages(Sel, ApplicationEmail.handleJunkFinish);
+			window.close();
+		}
+
+		function handleNotJunk() {
+			ApplicationEmail.store.unjunkMessages(Sel, ApplicationEmail.handleJunkFinish);
+			EmailSelection.folder_id(ApplicationEmail.i_inbox_folder.i_folder_id);
+			junk_dropdown.visible(true);
+			njunk_dropdown.visible(false);
+		}
+
+		function show_toolbar() {
+
+			if( !tool_bar_loaded ) {
+
+				CursorMonitor.hook();
+
+				tool_bar = new ToolBar(CursorMonitor.browserWidth());
+
+				var reply_button = new LabelButton("Reply", 50, 17, "Reply", handleReply);
+				var reply_all_button = new LabelButton("Reply All", 50, 17, "Reply All", handleReplyAll);
+				//var reply_context = reply_button.contextMenu(new ContextMenu(100));
+				//reply_context.addItem(new ContextMenuItem("Reply", true, handleReply));
+				//reply_context.addItem(new ContextMenuItem("Reply All", true, handleReplyAll));
+
+				tool_bar.addItem(new ToolBarButton(reply_button));
+				tool_bar.addItem(new ToolBarButton(reply_all_button));
+
+				var forward_button = new LabelButton("Forward", 50, 17, "Forward", handleForward);
+				tool_bar.addItem(new ToolBarButton( forward_button ));
+				tool_bar.addItem(new ToolBarDivider());
+				var full_header_button = new LabelButton("Full Headers", 72, 17, "Full Headers", openFullHeaders);
+				tool_bar.addItem(new ToolBarButton( full_header_button ));
+				tool_bar.addItem(new ToolBarDivider());
+				if( !_LITE_ ) {
+					var email_save_button = new IconButton("ToolBar_icon_save", 16, 16, 20, 18, "Save To File", handleEmailSaveToFile);
+					tool_bar.addItem(new ToolBarButton( email_save_button ));
+				}
+				tool_bar.addItem(new ToolBarButton(new IconLabelButton("Print", "ToolBar_icon_print", 16, 16, 50, 17, "Print Message", print_window_contents)));
+				var delete_button = new IconButton("ToolBar_icon_delete", 16, 16, 20, 18, "Delete", handleDelete);
+				tool_bar.addItem(new ToolBarButton( delete_button ));
+				tool_bar.addItem(new ToolBarDivider());
+
+				var flag_button = new LabelButton("Flag As", 60, 17, "Flag As", ApplicationEmail.handleForceContext);
+				var flag_context = flag_button.contextMenu(new ContextMenu(100));
+				flag_context.addItem(new ContextMenuItem("Read", true, handleMarkRead));
+				flag_context.addItem(new ContextMenuItem("Unread", true, handleMarkUnread));
+				flag_context.addItem(new ContextMenuDivider());
+
+				junk_dropdown = flag_context.addItem(new ContextMenuItem("Junk", true, handleJunk));
+				njunk_dropdown = flag_context.addItem(new ContextMenuItem("Not Junk", true, handleNotJunk));
+
+				if (ApplicationEmail.getDataModel().activeFolder() != undefined && ApplicationEmail.getDataModel().activeFolder() == ApplicationEmail.i_junk_folder) {
+					junk_dropdown.visible(false);
+					njunk_dropdown.visible(true);
+				} else {
+					junk_dropdown.visible(true);
+					njunk_dropdown.visible(false);
+				}
+
+				tool_bar.addItem(new ToolBarButton(flag_button));
+
+				var move_to_button = new LabelButton("Move To", 60, 17, "Move To", handleEmailMoveTo);
+				tool_bar.addItem(new ToolBarButton( move_to_button ));
+
+				// If we have an HTML message that contains hidden images, add
+				// a button to enable the images.
+				var message = params["message"];
+				if(message.html() == "1") {
+					if(message.body().toLowerCase().indexOf( "btfimg" ) != -1 || message.body().toLowerCase().indexOf( "btfbackground" ) != -1) {
+						var action_images = new ToolBarButton(new IconLabelButton("Show Images", "ToolBar_icon_show_images", 16, 16, 92, 17, "Show Images", showImages));
+						tool_bar.addItem(action_images);
+
+						action_images_div = action_images.getItem();
+					}
+				}
+
+				document.getElementById('tools').appendChild(tool_bar.getBar());
+
+				if( message.in_compose ) {
+					reply_button.enabled( false );
+					reply_all_button.enabled( false );
+					forward_button.enabled( false );
+					full_header_button.enabled( false );
+					if( email_save_button ) { email_save_button.enabled( false ); }
+					delete_button.enabled( false );
+					flag_button.enabled( false );
+					move_to_button.enabled( false );
+				}
+
+				tool_bar_loaded = true;
+
+			}
+
+		}
+
+		function init() {
+
+			var hk_reply = new HotKey('R'.charCodeAt(0), HotKey.ctrlKey, handleReply);
+			var hk_forward = new HotKey('F'.charCodeAt(0), HotKey.ctrlKey, handleForward);
+			var hk_print = new HotKey('P'.charCodeAt(0), HotKey.ctrlKey, print_window_contents);
+			var hk_reply_all = new HotKey('R'.charCodeAt(0), HotKey.ctrlKey + HotKey.shiftKey, handleReplyAll);
+
+			HotKey.hook();
+
+			hk_reply.register();
+			hk_forward.register();
+			hk_print.register();
+			hk_reply_all.register();
+
+
+			params = top_window.ApplicationEmail.email_window_params[ window.name ];
+			user_prefs = top_window.user_prefs;
+			var email_prefs = top_window.ApplicationEmail.i_preferences;
+			var message = params[ 'message' ];
+			originalMessage = message;
+
+			if( message.has_details() ) {
+
+			show_toolbar();
+
+			top_button_div = document.getElementById( 'backtotop' );
+			top_button = new ToolBarButton( new LabelButton( "Back to top message", "100%", 17, "Back to top message", goToTopMessage ) ).getItem();
+			top_button.style.width = "100%";
+			top_button_div.style.display = "none";
+			document.getElementById('backtotop').appendChild( top_button );
+
+			// Fix for #142071:  Add the importance indicator just above the message headers			
+			importanceDiv = document.createElement('DIV');
+			importanceDiv.className = "NotificationBar_info";
+			importanceDiv.style.width = ( document.all ? "100%" : tool_bar.width()-29 );
+			if (!document.all) {
+				importanceDiv.style.cssFloat = "left";
+			} else {
+				importanceDiv.style.styleFloat = "left";
+			}
+			importanceDiv.style.border = "1px solid";
+				// Use separate DIVs for the text and the icon.  This allows the text/icons to be interchanged
+				// without impacting each other significantly
+				var imp_text = document.createElement('DIV');
+				var icon_div = document.createElement('DIV');
+				if( message.importance() == "0" ) {
+					imp_text.innerHTML = "This message was sent with <b>Low</b> importance.";
+					icon_div.className = "list_importance_low";
+				} else if ( message.importance() == "2" ) {
+					imp_text.innerHTML = "This message was sent with <b>High</b> importance.";
+					icon_div.className = "list_importance_high";
+				}			
+				icon_div.style.height = "16px";
+				icon_div.style.width = "16px";
+				imp_text.style.fontSize = "12px";
+				if( !document.all ) {
+					imp_text.style.cssFloat = "left";
+					icon_div.style.cssFloat = "left";
+				} else {
+					imp_text.style.styleFloat = "left";
+					icon_div.style.styleFloat = "left";
+				}
+			importanceDiv.style.height = "auto";
+			importanceDiv.style.padding = "5px";
+			importanceDiv.appendChild(icon_div);
+			importanceDiv.appendChild(imp_text);
+			// Only append this div provided that we are not reading a normal importance
+			if( message.importance() != "1" ) {
+				document.getElementById('importance').appendChild(importanceDiv);
+			}
+			
+			var temp = document.createElement('DIV');
+			temp.style.clear = "both";
+			document.getElementById('importance').appendChild( temp );
+			
+			// Fix for #140983:
+			// If the display name for the message was never set, it needs to be set for print to work correctly
+			if( message.from_display() == undefined ) {
+				message.from_display( email_prefs.display_name() );
+			}
+			
+			display_message( message );
+
+			// Reset the tool bar width in case scroll bars have popped up with
+			// the message now shown.
+			tool_bar.width(CursorMonitor.clientWidth());
+
+			try {
+				var docBody = document.getElementById( "messageBody" );
+				docBody.style.position = "relative";
+				SearchBox.engines = top_window.SearchBox.engines;
+				var search_menu = new SearchMenu(docBody, top_window);
+			} catch(e) {
+			}
+
+			
+			if( !params[ 'no_print' ] ) {
+				set_print_timer();
+				//close_after_print = true;
+			}
+
+			} else {
+
+				setTimeout( "init()", 1000 );
+
+			}
+
+		}
+
+		function display_message( message ) {
+
+			var header = "<table border='0' cellpadding='2' cellspacing='0'>";
+
+			if( message.date() != undefined ) {
+				header += "<tr><td><label>Date:</label><td>" + message.date() +
+						"</td></tr>";
+			}
+
+			if( message.from_address() != undefined ) {
+				header += "<tr><td><label>From:</label><td>" +
+						address_string( htmlEncode(htmlEncode(message.from_display())),
+						message.from_address() ) + "</td></tr>";
+			}
+
+			if( message.subject() != undefined ) {
+				header += "<tr><td><label>Subject:</label><td>" +
+						message.subject() + "</td></tr>";
+			}
+
+			if( message.recipients() != undefined || message.to() != undefined ) {
+
+				var recipients = message.recipients();
+				if( recipients == undefined ) {
+					recipients = message.to();
+				}
+
+				if( recipients.length > 0 && typeof(recipients) != "string" ) {
+
+					header += "<tr><td class=\"tall_header\"><label>To:</label><td>";
+
+					if(recipients.length > 8) {
+						header += '<div class="recipients">';
+					}
+
+					for( var x = 0; x < recipients.length; x++ ) {
+						if( x > 0 ) {
+							header += ", ";
+						}
+						header += address_string( recipients[ x ].display,
+								recipients[ x ].address );
+					}
+
+					if(recipients.length > 8) {
+						header += '</div>';
+					}
+
+					header += "</td></tr>";
+
+				}else if( typeof(recipients) == "string" && recipients.length > 0){
+					header += "<tr><td class=\"tall_header\"><label>To:</label><td>";
+					header += "<div class=\"recipients\">";
+
+					header += (recipients.replace( /</g, "&lt;" )).replace( />/g, "&gt;" ); //clean up the email addresses
+
+					header += "</div>";
+
+					header += "</td></tr>";
+				}	
+
+			}
+
+			if( message.cc() != undefined ) {
+
+				var cc = message.cc();
+
+				if( cc.length > 0 && typeof(cc) != "string" ) {
+
+					header += "<tr><td class=\"tall_header\"><label>Cc:</label><td>";
+
+					if(cc.length > 8) {
+						header += '<div class="recipients">';
+					}
+
+					for( var x = 0; x < cc.length; x++ ) {
+						if( x > 0 ) {
+							header += ", ";
+						}
+						header += address_string( cc[ x ].display,
+								cc[ x ].address );
+					}
+
+					if(cc.length > 8) {
+						header += '</div>';
+					}
+
+					header += "</td></tr>";
+
+				}else if (typeof(cc) == "string" && cc.length > 0){
+					header += "<tr><td class=\"tall_header\"><label>Cc:</label><td>";
+					header += "<div class=\"recipients\">";
+
+					header += (cc.replace( /</g, "&lt;" )).replace( />/g, "&gt;" ); //clean up the email addresses
+
+					header += "</div>";
+
+					header += "</td></tr>";
+				}	
+
+			}
+
+			if( message.bcc() != undefined ) {
+
+				var bcc = message.bcc();
+
+				if( bcc.length > 0 && typeof(bcc) != "string") {
+
+					header += "<tr><td class=\"tall_header\"><label>Bcc:</label><td>";
+
+					if(bcc.length > 8) {
+						header += '<div class="recipients">';
+					}
+
+					for( var x = 0; x < bcc.length; x++ ) {
+						if( x > 0 ) {
+							header += ", ";
+						}
+						header += address_string( bcc[ x ].display,
+								bcc[ x ].address );
+					}
+
+					if(bcc.length > 8) {
+						header += '</div>';
+					}
+
+					header += "</td></tr>";
+
+				}else if( typeof(bcc) == "string"  && bcc.length > 0 ){
+					header += "<tr><td class=\"tall_header\"><label>Bcc:</label><td>";
+					header += "<div class=\"recipients\">";
+
+					header += (bcc.replace( /</g, "&lt;" )).replace( />/g, "&gt;" ); //clean up the email addresses
+
+					header += "</div>";
+
+					header += "</td></tr>";
+				}	
+
+			}
+
+			if( message.attachments() != undefined ) {
+
+				var attachments = message.attachments();
+
+				if( attachments.length > 0 ) {
+
+					header += "<tr><td class=\"tall_header\"><label>Attachments:</label><td>";
+
+					var attach_prefix = message.attachment_id();
+
+					if( attach_prefix != "" ) {
+						attach_prefix += ",";
+					}
+
+					for( var x = 0; x < attachments.length; x++ ) {
+
+						if( params[ 'no_print' ] ) {
+
+							var icon = "";
+							var func = "";
+							var no_scope = false;
+
+							if( attachments[ x ].name.match( /\.vcf$/i ) ) {
+								icon = "<img src=\"/gui/img/spacer.gif\" " +
+										"class=\"ico-vcard\">";
+								func = "openVcardAttachment" +
+										"(\"" + message.folder_id() + "\",\"" +
+										message.id() + "\",\"" +
+										attach_prefix + attachments[ x ].id +
+										"\", undefined, undefined, true);";
+								no_scope = true;
+							} else if( attachments[ x ].name.match( /\.ics$/i ) ) {
+							 	icon = "<img src=\"/gui/img/spacer.gif\" " +
+										"class=\"ico-new-event\">";
+								func = "openIcalAttachment" +
+										"(\"" + message.folder_id() + "\",\"" +
+										message.id() + "\",\"" +
+										attach_prefix + attachments[ x ].id +
+										"\");";
+								no_scope = true;
+							} else if( attachments[ x ].type.indexOf( 'message' ) != -1 ) {
+								icon = "<img src='img/email_attachment.gif'>";
+								func = "ApplicationEmail." +
+										"openAttachmentMessagePopup(\"" +
+										message.folder_id() + "\",\"" +
+										message.id() + "\",\"" +
+										attach_prefix + attachments[ x ].id +
+										"\", undefined, \"" + window.name + "\");";
+							} else {
+								icon = "<img src='img/email_attachment.gif'>";
+								func = "downloadAttachment" +
+										"(\"" + message.folder_id() + "\",\"" +
+										message.id() + "\",\"" +
+										attachments[ x ].id + "\",\"" +
+										message.attachment_id() + "\");";
+								no_scope = true;
+							}
+
+							header += "<span style='white-space: nowrap;'>" +
+									icon + "&nbsp;<a border=0 href='" +
+									(no_scope == false ? "javascript:window.opener." + func : "#") +
+									"' " + (no_scope == false ? "" : "onclick='" + func + "' ") +"id='" + message.folder_id() + "/" +
+									message.id() + "/" + attachments[ x ].id +
+									"'>" + attachments[ x ].name + "</a> (" +
+									window.opener.ApplicationEmail.filter_size(
+									attachments[ x ].size ) + ")";
+
+							if( x + 1 < attachments.length ) {
+								header += ", ";
+							}
+
+							header += "</span>";
+
+						} else {
+
+							if( x > 0 ) {
+								header += ", ";
+							}
+
+							header += attachments[ x ].name;
+
+						}
+
+					}
+
+					header += "</td></tr>";
+
+					/**
+					 * #138768 - User can't open attachment in Inbox
+					 *
+					 * While I could not recreate this problem, Carm
+					 * noted on this bug that the attachment had line breaks
+					 * that caused it to invalidate the attachment link and
+					 * as a result the user could not just click and open it.
+					 *
+					 * I'm not even sure how a carriage return and/or a line
+					 * feed would make it this far, but all the same, lets
+					 * just make sure to remove any just incase, to eliminate
+					 * this rare occurrence of the bug.
+					 */
+					header = header.replace(/\r/, "");
+					header = header.replace(/\n/, "");
+
+				}
+
+			}
+
+			header += "</table>";
+
+			if( top_window.ApplicationEmail.travelEnabled &&
+					top_window.TravelEmailInterface.obj.isOrbitzEmail(
+					message ) && params[ 'no_print' ] ) {
+				header += "<br><a href='Javascript:createTravelEvent()'>Add Travel Events to Calendar</a><br>";
+			}
+
+			if( top_window.ApplicationEmail.efaxEnabled &&
+					top_window.EfaxEmailInterface.obj.isEfaxEmail(
+					message ) && params[ 'no_print' ] ) {
+				header += "<br><a href='Javascript:saveToEfax()'>Save to eFax Settings</a><br>";
+			}
+
+			var docBody = document.getElementById( "messageBody" );
+			//#140141 - viewing HTML emails displays raw html
+			var body_data = message.body();
+
+			if( message.html() == "1" ) {
+				//#140141 - strip out <style> tags
+				body_data = body_data.replace( /<style.*?>.*?<\/style.*?>/gi, "" );
+				docBody.innerHTML = body_data;
+				// end #140141
+			} else {
+				var pre_tag = document.createElement( 'DIV' );
+
+				// remove <br> tags inserted at back end
+				body_data = body_data.replace( /<br>\n/gi, "\n" );
+
+				// convert newlines to <br> tags (commented out to fix Bug #140574 )
+				body_data = body_data.replace( /\n/g, "<br>" );
+
+				pre_tag.innerHTML = body_data;
+
+				try {
+					if( docBody.firstChild ) {
+						docBody.removeChild( docBody.firstChild );
+					}
+				}catch(e){
+					//ignore
+				}
+				docBody.appendChild(pre_tag);
+
+			}
+
+			// 142164 - Lite mode: change meeting request email handling
+			// Hide the link info text for all modes
+			var pl=document.getElementById('promptline');
+			if (pl != undefined) pl.style.display = 'none';
+			
+			document.getElementById( "header" ).innerHTML = header;
+
+
+		}
+
+			function address_string( display, address ) {
+				if( display == undefined ) {
+					return address;
+				} else {
+					return "\"" + htmlUnencode(display) + "\" &lt;" + address + "&gt;";
+				}
+			}
+
+		function print_window_contents() {
+			try {
+				if( !window.closed ) {
+					 window.print();
+					if( close_after_print ) {
+						window.close();
+					}
+				}
+			} catch( e ) {
+				return;
+			}
+		}
+
+		/**
+		 * Shows hidden images.
+		 */
+		function showImages() {
+			var message = params["message"];
+
+			if(message.html() == "1") {
+				var body_data = message.body();
+				body_data = body_data.replace( /btfimg/gi, "img" );
+				body_data = body_data.replace( /btfbackground/gi, "background" );
+
+				var docBody = document.getElementById( "messageBody" );
+				docBody.innerHTML = body_data;
+
+				action_images_div.style.display = "none";
+			}
+		}
+
+		function set_print_timer() {
+			print_timer = setTimeout(
+					'if(!window.closed)print_window_contents();', 300 );
+		}
+
+		function clear_print_timer() {
+			clearTimeout( print_timer );
+		}
+
+		function createTravelEvent() {
+			top_window.focus();
+			top_window.TravelEmailInterface.obj.createEvent( params[ 'message' ] );
+		}
+
+		function saveToEfax() {
+			top_window.focus();
+			top_window.EfaxEmailInterface.obj.saveToSettings( params[ 'message' ] );
+		}
+
+		function goToTopMessage() {
+			top_button_div.style.display = "none";
+			display_message( originalMessage );
+		}
+
+		function handleAttachmentMessage( message ) {
+			top_button_div.style.display = '';
+			//alert(message.body());
+			display_message( message );
+		}
+
+	</script>
+
+<div style="opacity: 0; width: 41px; left: 36px; top: 31px; display: none;" class="ToolTipText"><div>Reply</div></div></body></html>

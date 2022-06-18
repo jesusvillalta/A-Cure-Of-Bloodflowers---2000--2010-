@@ -1,0 +1,63 @@
+body,td,th {
+	color: #33FF99;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	scrollbar-face-color:#000000;
+	scrollbar-highlight-color:#303030;
+	scrollbar-3dlight-color:#D9D9D7;
+	scrollbar-darkshadow-color:#000000;
+	scrollbar-shadow-color:#303030;
+	scrollbar-arrow-color:#D9D9D7;
+	scrollbar-track-color:#303030;
+}
+p { text-align:center;}
+.fondo {
+	background-attachment: fixed;
+	background-position: center 40%;
+	background-repeat: repeat-y;
+	background-color: #000000;
+}
+
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #2CAD83;
+	font-size: 12px;
+}
+a:visited {
+	color: #2CAD83;
+	text-decoration: none;
+}
+a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:link {
+	color: #2CAD83;
+	text-decoration: none;
+}
+.titulo {
+	color:#FFFFCC;
+	font-size: 44px;
+	font-weight: bold;
+	margin-top: 15px;
+	}
+.cancion {
+	font-weight:bold;
+	color: #FFFFFF;
+}
+a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.jtdCd {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background-color: #2CAD83;
+}
+.capaLetrasFondo {
+	background-color: #000000;
+	background-attachment: fixed;
+	background-position: center 70px;
+	background-repeat: no-repeat;
+}

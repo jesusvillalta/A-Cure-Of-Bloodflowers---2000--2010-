@@ -1,0 +1,2 @@
+
+var REGISTRY_INDEX="wx59CSrdkOxALeY2bBdM493r6kgKNA7UNCSIrLZYVyvE80rpxI1IhcvkWQtUCWZkQT6fjUnbFWldTHAvfDsUTU0UN6kc0oxYAoi9CwF7D1tiPTmjyuqjZkdY4p8cq5o";var REGISTRY_DATA="8365:0:General[$1268:0:1:3:layout_default[My%20Layout]4268:0:1:3:layout_autosave[2]9005:0:1:3:popout_TaskDisplay[0]5604:0:1:3:popout_EventDisplay[0]890:0:1:3:popout_ReminderDisplay[1]]1049:0:1:3:contacts_simpleclick_state[personal%3Bundefined%2C]";JavaScriptResource.notifyComplete( '/cgi-bin/phoenix/Registry.fcg' );

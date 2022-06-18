@@ -1,0 +1,1069 @@
+BODY * { -moz-box-sizing: border-box; }
+BODY { font:12px/1.2em Verdana,Arial,sans-serif; margin:0px; width:100%; }
+H2 { font:bold 12px/1.2em Verdana,Arial,sans-serif; }
+H3 { font:bold 11px/1.2em Verdana,Arial,sans-serif; margin:5px 0px; }
+A, A:hover, A:active, A:visited { font:11px/1.2 Verdana,Arial,sans-serif; }
+
+.appnav, .th1 { background:#EEE; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color:#333; padding: 2px 2px 2px 5px; border:solid 1px; border-color:#FFF #BBB #BBB #FFF; }
+.th1 { line-height: 14px; height:22px; }
+.appnav { line-height: 16px; }
+
+.content {  margin:10px; }
+.menubar { background:#eee; }
+.drag-opacity { filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5; -khtml-opacity:0.5; }
+/****************** ICONS ********************/
+.progressbar-1 { width:163px;height:17px; background-repeat:no-repeat; }
+.progressbar-2 { width:163px;height:17px; background-repeat:no-repeat; }
+.progressbar-3 { width:163px;height:17px; background-repeat:no-repeat; }
+.progressbar-4 { width:163px;height:17px; background-repeat:no-repeat; }
+.progressbar-5 { width:163px;height:17px; background-repeat:no-repeat; }
+.progressbar-6 { width:163px;height:17px; background-repeat:no-repeat; }
+.progressbar-7 { width:163px;height:17px; background-repeat:no-repeat; }
+.generic-person { width:100px;height:120px; background-repeat:no-repeat; }
+.generic-small { width:75px;height:90px; background-repeat:no-repeat; }
+.app-calendar { width:32px;height:32px; background-repeat:no-repeat; }
+.app-contacts { width:32px;height:32px; background-repeat:no-repeat; }
+.app-email { width:32px;height:32px; background-repeat:no-repeat; }
+.app-emgr { width:32px;height:32px; background-repeat:no-repeat; }
+.app-files { width:32px;height:32px; background-repeat:no-repeat; }
+.app-help { width:32px;height:32px; background-repeat:no-repeat; }
+.app-im { width:32px;height:32px; background-repeat:no-repeat; }
+.app-im-on { width:32px;height:32px; background-repeat:no-repeat; }
+.app-myday { width:32px;height:32px; background-repeat:no-repeat; }
+.app-prefs { width:32px;height:32px; background-repeat:no-repeat; }
+.app-signout { width:32px;height:32px; background-repeat:no-repeat; }
+.app-ssend { width:32px;height:32px; background-repeat:no-repeat; }
+.app-tasks { width:32px;height:32px; background-repeat:no-repeat; }
+.icon-sys-error { width:32px;height:32px; background-repeat:no-repeat; }
+.icon-sys-notify { width:32px;height:32px; background-repeat:no-repeat; }
+.icon-sys-warning { width:32px;height:32px; background-repeat:no-repeat; }
+.ico-search-fld { width:32px;height:32px; background-repeat:no-repeat; }
+.ed-splitcel { width:23px;height:22px; background-repeat:no-repeat; }
+.ico-groups-down { width:22px;height:15px; background-repeat:no-repeat; }
+.ico-groups { width:22px;height:15px; background-repeat:no-repeat; }
+.ico-groups-side { width:22px;height:15px; background-repeat:no-repeat; }
+.resize-appt { width:20px;height:7px; background-repeat:no-repeat; }
+.ico-attach-menu { width:19px;height:13px; background-repeat:no-repeat; }
+.ico-view-today { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-child { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-cmgr { width:19px;height:16px; background-repeat:no-repeat; background-image:url(/gui/img/tree_cmgr.gif); }
+.tree-bluecard { width:19px;height:16px; background-repeat:no-repeat; background-image:url(/gui/img/tree_bluecard.gif); }
+.tree-bluecard-end { width:19px;height:16px; background-repeat:no-repeat; background-image:url(/gui/img/tree_bluecard_end.gif); }
+.b-popup { width:19px;height:16px; background-repeat:no-repeat; background-image:url(/gui/img/b_popup.gif); }
+.tree-collapse-first { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-collapse { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-collapse-last { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-drafts { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-expand-first { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-expand { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-expand-last { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-extend { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-folder { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-folder-open { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-hide { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-inbox { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-junk { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-midbranch { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-sent { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-sh-folder { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-sh-folder-open { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-show { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-trash-empty { width:19px;height:16px; background-repeat:no-repeat; }
+.tree-trash { width:19px;height:16px; background-repeat:no-repeat; }
+.ed-about { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-align-center { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-align-justify { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-align-left { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-align-right { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-blank { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-charmap { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-color-bg { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-color-fg { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-copy { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-custom { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-cut { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-delete { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-format-bold { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-format-italic { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-format-strike { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-format-sub { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-format-sup { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-format-underline { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-fullscreen-max { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-fullscreen-min { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-help { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-hr { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-html { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-image { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-indent-less { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-indent-more { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-insert-table { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-left-to-right { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-link { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-list-bullet { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-list-num { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-paste { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-redo { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-right-to-left { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-save { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-show-border { width:18px;height:18px; background-repeat:no-repeat; }
+.ed-undo { width:18px;height:18px; background-repeat:no-repeat; }
+.ico-spellcheck { width:18px;height:18px; background-repeat:no-repeat; }
+.ico-key-many { width:17px;height:17px; background-repeat:no-repeat; }
+.ico-key-one { width:17px;height:17px; background-repeat:no-repeat; }
+.b-marked { width:16px;height:16px; background-repeat:no-repeat; }
+.b-movedown { width:16px;height:16px; background-repeat:no-repeat; }
+.b-moveup { width:16px;height:16px; background-repeat:no-repeat; }
+.b-next { width:16px;height:16px; background-repeat:no-repeat; }
+.b-prev { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-actions { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-anniversary { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-arrow { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-attachment { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-birthday { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-calendar { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-delete { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-edit-disabled { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-edit { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-file-co { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-file { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-file-lock { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-folder { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-folder-shared { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-help { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-holiday { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-im { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-imgshow { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-new-contact { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-new-email { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-new-event { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-notify { width:16px;height:16px; background-repeat:no-repeat; }
+.icon-sys-warning-16x16 { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-print { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-quick-add { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-quick-event { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-reminder { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-save { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-sysnotify { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-task { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-trash-empty { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-trash { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-vcard { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-view-day { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-view { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-view-month { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-view-week { width:16px;height:16px; background-repeat:no-repeat; }
+.sort-down { width:16px;height:16px; background-repeat:no-repeat; }
+.sort-up { width:16px;height:16px; background-repeat:no-repeat; }
+.ico-emailatt { width:15px;height:16px; background-repeat:no-repeat; }
+.im-bottom-off { width:15px;height:15px; background-repeat:no-repeat; }
+.im-bottom-on { width:15px;height:15px; background-repeat:no-repeat; }
+.im-mid-off { width:15px;height:15px; background-repeat:no-repeat; }
+.im-mid-on { width:15px;height:15px; background-repeat:no-repeat; }
+.ico-pencil { width:14px;height:12px; background-repeat:no-repeat; }
+.ico-pencil-gray { width:14px;height:12px; background-repeat:no-repeat; }
+.ico-small-prin { width:14px;height:12px; background-repeat:no-repeat; }
+.ico-small-prin-gray { width:14px;height:12px; background-repeat:no-repeat; }
+.ico-small-save { width:14px;height:12px; background-repeat:no-repeat; }
+.ico-small-save-gray { width:14px;height:12px; background-repeat:no-repeat; }
+.b-arrow-down { width:11px;height:11px; background-repeat:no-repeat; }
+.b-arrow-right { width:11px;height:11px; background-repeat:no-repeat; }
+.b-arrow-up { width:11px;height:11px; background-repeat:no-repeat; }
+.b-dropdown { width:11px;height:9px; background-repeat:no-repeat; }
+.b-refresh { width:11px;height:11px; background-repeat:no-repeat; }
+.ico-add-contact { width:11px;height:11px; background-repeat:no-repeat; }
+.ico-close-x { width:11px;height:11px; background-repeat:no-repeat; }
+.ico-hide-options { width:11px;height:11px; background-repeat:no-repeat; }
+.ico-show-header { width:11px;height:11px; background-repeat:no-repeat; }
+.ico-show-image { width:11px;height:11px; background-repeat:no-repeat; }
+.ico-show-options { width:11px;height:11px; background-repeat:no-repeat; }
+.b-help { width:10px;height:10px; background-repeat:no-repeat; }
+.b-online { width:10px;height:10px; background-repeat:no-repeat; }
+.b-prefs { width:10px;height:10px; background-repeat:no-repeat; }
+.b-sclist { width:10px;height:10px; background-repeat:no-repeat; }
+.b-shortcuts { width:10px;height:10px; background-repeat:no-repeat; }
+.b-signout { width:10px;height:10px; background-repeat:no-repeat; }
+.b-toolbar { width:10px;height:10px; background-repeat:no-repeat; }
+.b-close-x { width:8px;height:8px; background-repeat:no-repeat; }
+.ico-left-arrow { width:5px;height:9px; background-repeat:no-repeat; }
+.ico-right-arrow { width:5px;height:9px; background-repeat:no-repeat; }
+
+/************** FORM ELEMENTS **************/
+BODY.dialog { margin:0; padding:0; overflow:auto; text-align:center; }
+FORM .optionbox { border:0px; margin:0px; padding:0px; }
+LABEL { font-size: 11px; }
+FIELDSET { margin:10px auto; border:solid 1px #bbb; }
+LEGEND { font:bold 11px/1.2 Verdana,Arial,sans-serif; margin-bottom:-3px;}
+BUTTON { 
+	width:75px; 
+	cursor:pointer;
+   vertical-align:middle;
+   white-space:nowrap;
+}
+/*.dialog BUTTON { height:22px; }*/
+
+SELECT, TEXTAREA, INPUT { 
+	color:#333; 
+	font:12px Arial,sans-serif; 
+   vertical-align: top;
+   outline-style: none;
+}
+
+FIELDSET DIV { font:normal 11px/1.2em; width:100%; padding:8px; margin:8px 0px; }
+FIELDSET DIV TABLE { width:100%; margin:0px; }
+FIELDSET DIV TR { vertical-align:top; }
+FIELDSET DIV TD { font:normal 11px/1.8em Verdana,sans-serif; padding:2px; }
+FIELDSET DIV LABEL { vertical-align:middle; }
+FIELDSET DIV P { font:normal 11px/1.4 Verdana,sans-serif; }
+
+#buttonsinframe {
+	margin:5px auto;
+	padding:10px 0px 5px 5px; 
+	text-align:right; 
+	width:100%; 
+	z-index:1000;
+}
+
+/**************** DATA TABLES****************/
+TABLE.sortable { border:solid 1px #CCC; margin:0px; }
+.myday TABLE.sortable { border:0; margin:0px; }
+.sortable TR { font:11px/1.2 Verdana,Arial,sans-serif; vertical-align:top; cursor:default; }
+.sortable TH { 
+	font:normal 11px/1.2 Verdana,Arial,sans-serif;
+	background:#fff;
+	border-style:solid;
+	border-width:1px;
+	border-color:#fff #aaa #aaa #fff;
+	text-align:left;
+	vertical-align:middle;
+	padding:2px;
+   height:25px;
+}
+TH.sortedUp, TH.sortedDown, TH.sortedUphover, TH.sortedDownhover  { border-color:#aaa #fff #fff #aaa; padding:2px; }
+TH.sortedUp, TH.sortedDown { background-color:#ddd; }
+TH.sortedUphover, TH.sortedDownhover { background-color:#ccc; }
+TH.hover { background:#f3f3f3; }
+TH.active { color:#fff; background:#ccc; }
+.sortable TD DIV { padding:5px 0; }
+
+/***************** CONTROLS *****************/
+.vrule {
+   font-size:0; line-height:0;
+   border-style:none solid;
+   border-width:0 1px;
+   border-color:#fff #fff #fff #999;
+   height:18px;
+   margin:0 5px;   
+}
+.btnav, .btnavhover, .btnavactive, .btnavoff {
+  font-family: Verdana, sans-serif;
+  font-size:11px;
+  background-color: transparent;
+  color: #000; 
+  cursor:pointer;
+  border:solid 1px;
+}
+.btnav, .btnavoff { border:0; padding:3px; }
+.btnavhover { border-color: #FFF #999 #999 #FFF; padding: 2px; }
+.btnavactive { border-color: #999 #FFF #FFF #999; padding: 4px 0px 0px 4px; }
+.btnavoff { color: #ccc; }
+.vert-splitter, .horiz-splitter { background: #eee; border-color:#BBB #FFF #BBB #FFF; }
+
+/***********JSDOMMENU STYLES***********/
+.jsdomenuarrow, .jsdomenuarrowover {
+	background-image: url('/gui/img/menu_arrow.png');
+	background-repeat: no-repeat; /* Do not alter this line! */
+	height: 7px;
+	position: absolute; /* Do not alter this line! */
+	right: 8px;
+	width: 4px;
+}
+.jsdomenuarrow { }
+.jsdomenuarrowover { }
+.jsdomenudiv {
+	position: absolute; /* Do not alter this line! */
+	background-color: #eee;
+	border-style:solid;
+   border-width:1px;
+	border-color: #fff #777 #777 #fff;
+	visibility: hidden;
+	cursor: default;
+	z-index: 1000;
+   
+/*   overflow:hidden; */
+}
+.jsdomenuitem, .jsdomenuitemover, .jsdomenuitemdisabled, .jsdomenuitemmarked, .jsdomenufoldermenu {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	background-color: transparent;
+	border:0;
+	padding: 2px 15px 2px 15px;
+	margin:0;
+	width: inherit;  /* Do not alter this line! */
+	position: relative; /* Do not alter this line! */
+   
+/*   white-space: nowrap;
+   text-overflow:ellipsis; */
+}
+.defaultAction { font-weight:bold; }
+.jsdomenuitem { color: #000; }
+.jsdomenufoldermenu { font-weight:bold; border-bottom:solid 2px #bbb; }
+.jsdomenuitemmarked { background:transparent url('/gui/img/b_marked.gif') 0px 3px no-repeat; }
+.jsdomenuitemdisabled { color: #BBB; }
+.jsdomenuitemover { background-color: #cde; color: #006; }
+.jsdomenusep { }
+.jsdomenusep hr { text-align: center; width: 95%; }
+
+/*****************FOLDER TREE****************/
+TABLE.tree TABLE {
+   font-family:Verdana,Arial,sans-serif; font-size:11px; line-height: 14px; 
+   text-align:left;
+}
+
+TABLE.tree LABEL { white-space:nowrap; }
+
+.fldrename {
+   background-color:#FFF;
+	border:solid 1px #009;
+	font-family:Verdana,Arial,sans-serif;
+	font-size: 11px;
+}
+.tree-extend-repeat { background-image:url('/gui/img/tree_extend.gif'); background-repeat:repeat-y; width:19px; }
+
+/**************** DISK QUOTA ****************/
+#dqlabel { font-size:10px; }
+#folderTreeRoot { font-size:11px; }
+.dqborder { font-size:0; line-height:0; background:#fff; border:inset 1px #eee; }
+.dq { font-size:0; line-height:0; color: #fff; background-color: #3c0; border: solid 1px; border-color:#fff #696 #696 #fff; padding:2px; }
+.dqwarn { font-size:0; line-height:0; color: #fff; background-color: #a00; border: solid 1px; border-color:#fff #633 #633 #fff; padding:2px; }
+
+/****************** MY DAY *******************/
+.myday  TD { font-size:11px; }
+A.nullink, A.nullink:hover, A.nullink:active, A.nullink:visited { color: #999; text-decoration:none; }
+A.newlink, A.newlink:hover, A.newlink:active, A.newlink:visited { color: #000; font-weight:bold; text-decoration:none; }
+A.newlink:hover { text-decoration:underline; }
+TABLE#myday_today TD, TABLE#universalInbox TD, TABLE#notifications TD, TABLE#upgradeOption TD, TABLE#upgradeTrial TD { 
+	vertical-align: top;
+	margin: 0px;
+	padding: 4px 2px 4px 5px;
+}
+TABLE#universalInbox TD, TABLE#notifications TD { border-bottom: 1px solid #DDD; }
+
+/***************** TASK LIST *****************/
+#taskListContainer { clear:both; }
+.menubar { height:30px; } /* Fix for black skin*/
+.tskOverdue { color:#c00; }
+.tskComplete { color:#999; text-decoration:line-through; }
+
+/******************* EMAIL *******************/
+.folder-tree, .message-view { background-color:#fff; }
+BODY.email { font:12px/1.2em Verdana,Arial,sans-serif; font-size:normal; line-height:normal;}
+.email TD { vertical-align:top; white-space:nowrap; }
+.email #messageBody * { white-space:normal; }
+.email LABEL { white-space:nowrap; }
+.email #richHeader, .email TD { font-size:11px; }
+.email #mailHeader TD, .email #mailHeader LABEL { line-height:14px; }
+.email #mailHeader LABEL { font-weight:bold; }
+
+.previewpaneheader A:link, .previewpaneheader A:visited {
+    text-decoration: none;
+    color: #3a3a3a;
+    cursor: hand;
+}
+
+.previewpaneheader A:hover {
+    background-color: #333;
+    text-decoration: none;
+    color: #eee;
+    cursor: hand;
+}
+
+/* w-label class is used in conjunction with the ico- classes */
+.w-label { padding-left:20px; padding-right:8px;}
+.ico-throbber { background:url('/gui/img/ico_throbber-20.gif') no-repeat; width:20px; height:20px; }
+.ico-throbber-100 { background:url('/gui/img/ico-throbber-100.gif') no-repeat; width:100px; height:100px; }
+
+.ico-im-ani { background:url('/gui/img/app_im-ani.gif') no-repeat; width:32px; height:32px; }
+.email #message-list-container TD, .email #messagePreviewHeaderTable TD  { white-space:normal; }
+
+/***************** CONTACTS *****************/
+.genericTable th { background-color: #fff; border: 1px solid #999; }
+.genericTable td { border-bottom: 1px solid #999; }
+.tabMenuElement { color:#03c; }
+.tabMenuElement_gray { color:#999; }
+.tabMenuElement_hover { color:#06f; border-color:#999; }
+.tabOutline { background-color:#fff; border-color:#999; }
+.tabMenuTab_active { 	color:#03c; background-color:#fff;	border-color:#999; }
+.tabMenuTab_inactive { color:#666; border: 1px solid #999; background: #fff; }
+/***************** CALENDAR *****************/
+.my_calendar {
+	height: 20px;
+	text-decoration: underline;
+	font-size: 11px;
+	cursor: pointer;
+	vertical-align: bottom;
+	line-height: 20px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+BODY.calendar { 
+   -moz-box-sizing: border-box;
+   font-family:Arial,Verdana,sans-serif;
+   width:100%;
+   height:100%;
+   padding:0px;
+   margin:0px;
+}
+BODY.calendar H1 { font-size:1.1em; color:#999; margin:10px auto; }
+BODY.calendar #title TD { white-space:nowrap; }
+
+TABLE#month {
+   width:100%;
+   height:100%;
+   border-right:solid 1px #ccc;
+   border-bottom:solid 1px #ccc;
+   text-align:left;
+}
+TABLE#month TBODY TD {
+   font-size:0.9em;
+   /*padding:5px;*/
+   vertical-align:top;
+   border-top:solid 1px #ccc;
+   border-left:solid 1px #ccc;
+   overflow:hidden;
+   height:150px;
+}
+TABLE#month TD.weekslct { width:1%; }
+TABLE#month TH, TABLE#weekly TH {
+   padding:0;
+   font-size:0.8em;
+   text-align:center;
+   vertical-align:middle;
+   height:25px;
+   width:14%;
+}
+TABLE#month TH DIV {
+   -moz-box-flex:1;
+   overflow:hidden;
+   white-space:nowrap;
+   text-overflow:ellipsis;  
+}
+TABLE#month, TABLE#weekly, TABLE#daily { border:solid 1px #ccc; text-align:left; }
+TABLE#daily, TABLE#weekly { width:100%; }
+TABLE#daily TD, TABLE#weekly TD { -moz-box-sizing:content-box; border-right:solid 1px #ccc; height:25px; }
+TD.timeslct { font-size:0.8em; text-align:left; white-space:nowrap; width:1%; }
+TD.hourslct { font-size:1.4em; text-align:right; vertical-align:top; width:1%; }
+
+A#linkPrev, A#linkNext { 
+   text-decoration:none; vertical-align:middle; font-size:.8em; width:60px; height:40px; padding:14px;
+}
+A#linkPrev:active { padding:16px 14px 12px 14px; }
+A#linkNext:active { padding:16px 14px 12px 14px; }
+A#linkPrev, A#linkNext { border-width:2px; border-top: solid; border-color:#fff #fff #fff #fff; }
+DIV.appt, DIV.apptHover  {
+   -moz-box-sizing:border-box;	
+   font-size:11px;
+   text-align:left;
+   padding:2px;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   white-space:nowrap;
+   margin:2px;
+}
+DIV.appt { border-style:solid; border-width: 1px; white-space: normal; overflow:hidden;}
+DIV.apptHover { background:#ffd; border:solid 1px #36C; white-space:normal; cursor:pointer; overflow:hidden; }
+.monthly DIV.appt, .monthly DIV.apptHover {
+   font-size:11px;
+   border-width:0px;
+   border-style:solid;
+   margin:2px;
+   padding:2px;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   white-space:nowrap;
+   /*background: transparent;*/
+}
+.monthly DIV.appt { padding:3px; }
+.monthly DIV.apptHover { color:#333; background:#ffd; border-color:#006; cursor:pointer;}
+DIV.pending { font-weight:bold; }
+DIV.tentative { font-style:italic; }
+DIV.birthday, DIV.anniversary, DIV.holiday, DIV.task, DIV.taskHover, DIV.allday { 
+   color:#000;
+   font-size:11px;
+   padding:2px;
+   white-space:nowrap;
+   padding-left:20px; 
+   margin:2px;
+   border:solid 1px #36C;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   background-color:#fff; background-repeat:no-repeat; cursor:default;   
+	width: 100%;
+}
+DIV.taskHover { cursor:pointer; }
+DIV.task SPAN { overflow:hidden; text-overflow:ellipsis; }
+TD.allday { vertical-align:top; }
+TD.allday DIV.appt { width: 100%; }
+#quickCal { font-size:0.8em; background:transparent; border-style:solid; border-width:1px 0; border-color:#ddd; text-align:center; width:100%; }
+#quickCal TR.nav { background:transparent; }
+#quickCal TD, #quickCal TH  { font-size:0.7em; text-align:center; height:20px; }
+#quickCal TH  { color: #333; vertical-align: top; border-bottom: 1px solid #DDD; }
+#quickCal TD TABLE { margin:auto; }
+#quickCal A:hover { text-decoration:underline; }
+#quickCal .calcell { color: #333; }
+#quickCal A, #quickCal  A:hover, #quickCal  A:active, #quickCal  A:visited  { color:#000; text-decoration:none; }
+#quickCal .today A, #quickCal  .today  A:hover, #quickCal  .today A:active, #quickCal  .today A:visited  { color:#fff; }
+#quickCal .monthNot { background:transparent; }
+#quickCal .monthNot A { color:#ccc; }
+
+/******************CUSTOM COLORS******************/
+.hilite { background-color: #def; cursor:pointer; }
+
+TABLE#month TH, TABLE#month TD.weekslct, TABLE#weekly TH, TD.hourslct, TD.timeslct {
+   color:#555;
+   padding:2px;
+   background:#eee;
+   border-top:solid 2px #fff;
+   border-left:solid 2px #fff;
+   border-bottom:solid 1px #ddd;
+   border-right:solid 1px #ddd;
+}
+
+.today { background:#369; color:#fff; }
+.monthNot, TR.stripe { background:#eee; }
+TR.hilite TD.today, .todayhilite { background-color:#036; color:#fff;}
+TR.hilite TD.monthNot, TD.monthNothilite { background-color:#cde; cursor:pointer; }
+
+A.tree { color:#000; text-decoration:none; }
+A.tree:hover { color:#000; text-decoration:underline; }
+A.tree:active { color:#006; text-decoration:none; background-color:#E6F2DC; }
+
+/*
+
+	This is only here for the time being so we can integrate the new calendar view class
+	into the existing calendar framework.  This will be moved to default.css and skin.css 
+	in the very near future.
+
+
+*/
+
+/*
+	Styles for the weekly and daily view cells
+*/
+
+/*
+	The table that makes up the views
+*/
+	.time_grid {
+		border-bottom: 1px solid #CCCCCC;
+	}
+
+	/*
+		The generic styles for all 3d'ish looking table cells.  This includes the time
+		ident information on the left column, as well as the headers.
+	*/
+		.hour_cell, .header_cell, .ampm_cell, .header_cell, .header_cell_today, .header_cell_today_highlighted, .header_cell_highlighted {
+			background-color: #EEEEEE;
+			border-top: 1px solid #FFFFFF;
+			border-left: 1px solid #FFFFFF;
+			border-bottom: 1px solid #CCCCCC;
+			border-right: 1px solid #CCCCCC;
+			color: #555555;
+			font-family: Arial;
+			font-size: 15px;
+			font-weight: bold;
+
+			text-align: center;
+			-moz-box-sizing: border-box;
+			width: 24px;
+		}
+
+	/*
+		Column header cells
+	*/
+		.header_cell, .header_cell_today, .header_cell_today_highlighted, .header_cell_highlighted {
+			font-size: 11px;
+			width: auto;
+			height: 25px;
+			line-height: 30px;
+			vertical-align: middle;
+		}
+
+		/*
+			Header cell which is in the today column
+		*/
+			.header_cell_today {
+				/*background-color: #336699;
+				color: #FFFFFF;*/
+			}
+
+		/*
+			Header cell for when the today column is also the active column
+		*/
+			.header_cell_today_highlighted {
+				background-color: #336699;
+				color: #FFFFFF;
+			}
+
+		/*
+			Header cell for when a normal non today column is active
+		*/
+			.header_cell_highlighted {
+				background-color: #679BCF;
+				color: #FFFFFF;
+			}
+
+
+	/*
+		The cells which are next to the hour cells, which are either empty, or hold an AM PM value.
+	*/
+		.ampm_cell {
+			font-size: 11px;
+			width: 24px;
+		}
+
+	/*
+		The generic styles for the actual time slot cells
+	*/
+		.grid_cell_selected, .grid_cell, .grid_cell_today, .grid_cell_selected, .grid_cell_today, .grid_cell_stripe_today, .grid_cell_today_highlight, .grid_cell_stripe_today_highlight {
+			border-right: 1px solid #CCCCCC;
+			height: 20px;
+			-moz-box-sizing: border-box;
+		}
+
+		/*
+			The cells which fall under the today column
+		*/
+			/*
+				Cells which do not have a stripe, and are under the today column
+			*/
+				.grid_cell_selected, .grid_cell_today, .grid_cell_stripe_today, .grid_cell_today_highlight, .grid_cell_stripe_today_highlight {
+					background-color: #EEEEFF;
+				}
+
+
+			/*
+				Cells which have a stripe and are under the today column
+			*/
+				.grid_cell_stripe_today {
+					background-color: #DDDDFF;
+				}
+
+
+			/*
+				Cells which have a stripe, are under the today column, and are highlighted
+			*/
+				.grid_cell_stripe_today_highlight {
+					background-color: #C2D9EF;
+				}
+
+
+			/*
+				Cells which do not have a stripe, are under the today column, and are highlighted
+			*/
+				.grid_cell_today_highlight {
+					background-color: #C2D9EF;
+				}
+
+			/*
+				Cells which are selected to display a drop target
+			*/
+				.grid_cell_selected {
+					background-color: #DDDDFF;
+				}
+
+	/*
+		Cells which are currently selected in a selection block. An example, is when a series of
+		cells are selected to display where a drag and drop would be placed if dropped.
+	*/
+		.grid_cell_selected {
+
+		}
+
+
+/*
+	Styles for the weekly and daily view rows
+*/
+
+	/*
+		Generic styles for all rows
+	*/
+		.grid_row, .grid_row_stripe, .grid_row_highlight, .grid_row_stripe_highlight {
+			background-color: #FFFFFF;
+		}
+
+	/*
+		The color of every other row
+	*/
+	.grid_row_stripe {
+		background-color: #F1F1F1;
+	}
+
+	/*
+		The color of a non stripe row when the mouse is positioned over it
+	*/
+	.grid_row_highlight {
+		background-color: #C2D9EF;
+	}
+
+	/*
+		The color of a stripe row when the mouse is positioned over it
+	*/
+	.grid_row_stripe_highlight {
+		background-color: #C2D9EF;
+	}
+
+
+
+/*
+	Skin template for calendar colors
+*/
+	/* 3d cells for header and time information */
+	.hour_cell, .header_cell, .ampm_cell, .header_cell, .header_cell_today, .header_cell_today_highlighted, .header_cell_highlighted {
+		background-color: #EEEEEE;
+	}
+
+	/* Rows which do not have a stripe */
+	.grid_row, .grid_row_stripe, .grid_row_highlight, .grid_row_stripe_highlight {
+		background-color: #FFFFFF;
+	}
+
+	/* Rows which do have a stripe */
+	.grid_row_stripe {
+		background-color: #F1F1F1;
+	}
+
+	/* Rows which are highlighted */
+	.grid_row_highlight, .grid_row_stripe_highlight, .grid_cell_stripe_today_highlight .grid_cell_today_highlight {
+		background-color: #C2D9EF;
+	}
+
+	/* Cells which are today, but do not have a stripe */
+	.grid_cell_today {
+		background-color: #EEEEFF;
+	}
+
+	/* Cells which are today, but do have a stripe */
+	.grid_cell_stripe_today, .grid_cell_selected {
+		background-color: #DDDDFF;
+	}
+
+	/* Headers which are selected but not today */
+	.header_cell_highlighted {
+		background-color: #679BCF;
+	}
+
+	/* Headers which are selected and are today */
+	.header_cell_today_highlighted {
+		background-color: #336699;
+	}
+
+.calendar_theme_0 { background-color: #fff; color: #000000; border-color: #36c; }
+.calendar_theme_1 { background-color: #80AFC4; color: #fff; border-color: #305464; }
+.calendar_theme_2 { background-color: #80C494; color: #fff; border-color: #306440; }
+.calendar_theme_3 { background-color: #AFC480; color: #fff; border-color: #546430; }
+.calendar_theme_4 { background-color: #DD7676; color: #fff; border-color: #742626; }
+.calendar_theme_5 { background-color: #E4C595; color: #333; border-color: #745c38; }
+.calendar_theme_6 { background-color: #DDD676; color: #fff; border-color: #746f26; }
+.calendar_theme_7 { background-color: #F0D3EE; color: #fff; border-color: #530960; }
+.calendar_theme_8 { background-color: #A798DB; color: #fff; border-color: #473b6e; }
+.calendar_theme_9 { background-color: #9C3AAC; color: #fff; border-color: #725c70; }
+
+.lunch_tomorrow_table {
+	border: 1px solid #999999;
+	}
+
+.lunch_tomorrow_logo {
+        margin-top: 1px;
+        margin-left: 1px;
+        float: left;
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+      }
+
+
+.lunch_tomorrow_box_wrapper {
+        border: 1px solid #999999;
+        background-repeat: no-repeat;
+        background-position: 2px center;
+      }
+
+.lunch_tomorrow_text, .lunch_tomorrow_text_active {
+        border: 0px;
+        color: #999999;
+        size: 12px;
+        font-family: Arial;
+      }
+
+.lunch_tomorrow_text_active {
+        color: #555555;
+      }
+
+.lunch_tomorrow_div {
+        padding: 5px;
+
+      }
+
+.quick_add_textbox {
+        position: absolute;
+        filter:alpha(opacity=75);
+        -moz-opacity:0.75;
+        overflow: auto;
+      }
+
+.quick_add_select {
+        position: absolute;
+        border: 1px solid #888888;
+        background-color: #CCCCCC;
+        filter:alpha(opacity=50);
+        -moz-opacity:0.5;
+      }
+
+.event_grabber {
+        cursor: n-resize;
+        font-size: 1px;
+        height: 7px;
+        text-align: center;
+      }
+
+
+/*
+SPLIT PANE CLASS
+*/
+
+.dl_control {
+        float: left;
+        overflow: hidden;
+      }
+
+.vert-splitter {
+	width: 2px;
+	cursor: e-resize;
+	font-size: 1px;
+	border: 1px solid;
+	border-color: #fff #aaa #aaa #fff;
+	}
+
+.dl_resize_phantom {
+        position: absolute;
+        width: 4px;
+        background-color: #000000;
+        filter:alpha(opacity=50);
+        -moz-opacity:0.5;
+        cursor: e-resize;
+      }
+
+.dl_display {
+        margin-right: 0px !important;
+        margin-right: -16px;
+      }
+
+.dl_calScroll {
+        overflow: auto;
+      }
+
+
+/*
+HEADER CLASS
+*/
+
+.dl_headerBar {
+        vertical-align: middle;
+        padding: 0px;
+        padding-left: 6px;
+      }
+
+.dl_titleBarButton, .dl_titleBarButton_hover {
+        float: right;
+        width: 21px;
+        height: 21px;
+        font-size: 1px;
+        margin-top: 1px;
+        margin-right: 2px;
+      }
+
+
+.dl_headerBarTitle {
+        float: left;
+        height: 22px;
+        overflow: hidden;
+      }
+
+/*
+BUTTON BAR CLASS
+*/
+
+.dl_buttonBar {
+        margin-top: 1px;
+        padding-top: 2px;
+        overflow: hidden;
+      }
+
+.dl_buttonBarButtonIcon {
+        float: left;
+        height: 15px;
+        width: 20px;
+        margin: 3px;
+        margin-left: 4px;
+        margin-top: 5px;
+      }
+
+.dl_buttonBarButton, .dl_buttonBarButton_hover {
+        float: left;
+        padding-right: 4px;
+        vertical-align: center;
+        cursor: pointer;
+        padding-right: 8px;
+
+      }
+
+.dl_buttonBarButton_hover {
+        border-top: 1px solid #F1F1F1;
+        border-left: 1px solid #F1F1F1;
+        border-bottom: 1px solid #999999;
+        border-right: 1px solid #999999;
+        padding-right: 6px;
+      }
+
+.dl_buttonBarButtonName {
+        float: left;
+        color: #444444;
+      }
+
+.dl_buttonBarDiv {
+        float: left;
+        width: 2px;
+        border: 1px solid;
+        border-color: #fff #aaa #aaa #fff;
+        margin-left: 5px;
+        margin-right: 3px;
+      }
+
+.dl_buttonBarPane {
+        float: left;
+      }
+
+/*
+SEARCH BOX CLASS
+*/
+
+.dl_searchBox {
+	padding-top: 2px;
+	border: 1px inset;
+	height: 21px;
+	margin-top: 1px;
+	}
+
+.dl_searchIcon {
+	float: left;
+	width: 32px;
+	height: 16px;
+	background: url(/gui/img/ico_search_fld.gif) center left no-repeat;
+	}
+
+.dl_searchBoxInput {
+	border: 0px;
+	height: 19px;
+	}
+
+
+/*
+Monthly calendar view
+*/
+
+.dl_calView {
+	overflow: auto;
+	}
+
+
+.dl_calMonthBorderCell, .dl_calMonthBorderCellArrow {
+	border: 1px solid;
+	border-color: #fff #aaa #aaa #fff;
+	background-color: #EEEEEE;
+	color: #333333;
+	font-size: 11px;
+	text-align: center;
+	height: 30px;
+	}
+
+.dl_calMonthDayCell {
+	border-bottom: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	height: 150px;
+	text-align: left;
+	vertical-align: top;
+	font-size: 11px;
+	padding: 3px;
+	}
+
+/*
+Timeline nav bar
+*/
+.dl_timelineNavBar {
+	vertical-align: middle;
+	text-align: center;
+	padding: 0px;
+	padding-left: 2px;
+	}
+
+.dl_timelineNavBarButton {
+	width: 21px;
+	height: 21px;
+	font-size: 1px;
+	margin-top: 2px;
+	margin-right: 2px;
+	cursor: pointer;
+	background-position: center center;
+	}
+
+.dl_timelineRight {
+	float: right;
+	}
+
+.dl_timelineLeft {
+	float: left;
+	}
+
+.menubar TABLE {
+	float: left;
+	overflow: auto;
+	}
+
+.w-label {
+      padding-left: 22px;
+      padding-right: 6px;
+    }
+
+.mtgTitle {
+	white-space:nowrap;
+	overflow:hidden;
+	}
+
+.meeting_request_box {
+	font-weight: bold;
+	cursor: pointer;
+	padding-left: 3px;
+	}
+
+.list_cell {
+	overflow: hidden;
+	}
+
+.shared_calendar_delete {
+	float: right;
+	}
+
+.day_number {
+	font-size: 12px;
+	}
+
+.Files_button_disabled {
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	-khtml-opacity: 0.6;
+	color: #000;
+}

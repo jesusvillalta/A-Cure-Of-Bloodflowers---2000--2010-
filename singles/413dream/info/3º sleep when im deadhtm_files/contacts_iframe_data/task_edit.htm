@@ -1,0 +1,89 @@
+<html><head><title>Loading task...</title>
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" rev="stylesheet" href="task_edit_data/default.css">
+
+<script type="text/javascript" src="contacts_iframe_data/dateUtils.js"></script>
+<script type="text/javascript" src="task_edit_data/calendar.js"></script>
+<script type="text/javascript" src="task_edit_data/calendar-en.js"></script>
+<script type="text/javascript" src="task_edit_data/calendar-setup.js"></script>
+<script type="text/javascript" src="task_edit_data/formatDateTimeTextfield.js"></script></head><body class="dialog"> 
+
+<form name="editTask">
+<div id="evtNav" class="appnav" style="overflow: hidden; text-align: left;">
+  <table id="buttonTable" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr>
+      <td id="buttonEdit" title="Save" class="btnav" action="handleFormSubmit();">
+         <div style="width: 50px;"><img src="task_edit_data/spacer.gif" class="ico-save" style="float: left; margin-right: 4px;">Save</div>
+      </td>
+      <td id="buttonCancel" title="Cancel" class="btnav" onClick="handleTaskFormCancel(true);">
+         <div style="width: 60px;"><img src="task_edit_data/spacer.gif" class="ico-delete" style="float: left; margin-right: 4px;">Cancel</div>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<div id="taskContentDiv" class="content">
+<!-- *****************TASK DETAILS FIELDSET*****************************************-->
+ <fieldset style="width: 600px;">
+ <legend>Details</legend>
+  <div class="fieldset">
+   <table border="0" cellpadding="0" cellspacing="0">
+    <colgroup>
+     <col width="17%">
+     <col width="88%">
+    </colgroup>
+    <tbody><tr>
+	 <td><label>Title:</label></td>
+	 <td><input style="width: 100%;" id="txtTitle" value="" maxlength="255" type="text"></td>
+    </tr>
+	<tr>
+		<td><label>Description:</label></td>
+		<td><textarea style="width: 100%; height: 80px;" id="txtDesc"></textarea></td>
+	</tr>
+	<tr>
+		<td><label>Priority:</label></td>
+		<td>
+	      <select style="width: 40%;" name="optPriority" id="optPriority">
+	         <option value="1">Low</option>
+	         <option value="2" selected="selected">Normal</option>
+	         <option value="3">High</option>
+	      </select>
+	    </td>
+	</tr>
+	<tr>
+		<td><label>Status:</label></td>
+	   <td>
+	      <select style="width: 40%;" name="optStatus" id="optStatus">
+	         <option value="0" selected="selected">Not started</option>
+	         <option value="1">In progress</option>
+	         <option value="2">Completed</option>
+	         <option value="3">Waiting on someone else</option>
+	         <option value="4">Deferred</option>
+	      </select>
+	   </td>
+	</tr>
+</tbody></table>
+</div>
+</fieldset>
+<!-- ******************DUE DATE*******************-->
+<fieldset style="width: 600px;">
+<legend>Due Date</legend>
+<div class="fieldset">
+<table border="0" cellpadding="0" cellspacing="0">
+<colgroup><col width="18%"><col width="1%"><col width="10%"><col width="15%"><col width="40%">
+</colgroup>
+<tbody><tr style="vertical-align: middle;">
+	<td align="right"><label for="txtDueDate">Due Date:</label></td>
+   <td><input name="#" id="txtDueDate" size="12" maxlength="10" value="" type="text"></td>
+   <td><img src="task_edit_data/ico_calendar.gif" title="Select a Date" id="dpNewTask" border="0" height="16" width="16"></td>
+	<td><label for="cboxNoDueDate">No due date</label></td>
+   <td><input id="cboxNoDueDate" onClick="toggleDueDate();" class="optionbox" checked="checked" type="checkbox"></td>
+</tr>
+</tbody></table>
+</div>
+</fieldset>
+</div>
+</form>
+</body></html>

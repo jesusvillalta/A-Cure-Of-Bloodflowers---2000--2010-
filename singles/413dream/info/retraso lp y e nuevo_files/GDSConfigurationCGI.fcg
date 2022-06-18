@@ -1,0 +1,136 @@
+
+
+var images=Array("./img/map-bgs.gif",
+"./img/map-icons.gif",
+"./img/map-navicons.gif");
+enableMappedImage("NavigationBar_display_configuration", -684);
+enableMappedImage("NavigationBar_display_active_configuration", -665);
+enableMappedImage("LiteTreeIcon_folder", -420);
+enableMappedImage("LiteTreeNode_open", -1410);
+enableMappedImage("LiteTreeNode_closed", -1380);
+enableMappedImage("SimpleClick_icon_group", -492);
+enableMappedImage("SimpleClick_open", -470);
+enableMappedImage("SimpleClick_close", -446);
+enableMappedImage("SimpleClick-contact-on", -960);
+enableMappedImage("SimpleClick-contact-off", -930);
+enableMappedImage("SimpleClick-group-closed", -446);
+enableMappedImage("SimpleClick-group-open", -470);
+enableMappedImage("NavigationBar_expand_context_node", -590);
+enableMappedImage("NavigationBar_contact_context_node", -566);
+enableMappedImage("ApplicationTree_window_visible", -626);
+enableMappedImage("ApplicationTree_window_hidden", -645);
+enableMappedImage("ApplicationTree_switch", -701);
+enableMappedImage("ApplicationCalendar_small", -50);
+enableMappedImage("ApplicationContacts_small", -130);
+enableMappedImage("ApplicationEmail_small", -210);
+enableMappedImage("ApplicationIM_small", -450);
+enableMappedImage("ApplicationMyday_small", -610);
+enableMappedImage("EmailFolder_inbox", -480);
+enableMappedImage("EmailFolder_sent",-570); 
+enableMappedImage("EmailFolder_draft",-510); 
+enableMappedImage("EmailFolder_trash",-600); 
+enableMappedImage("EmailFolder_trash_empty",-630); 
+enableMappedImage("EmailFolder_junk",-540); 
+enableMappedImage("GeneralPrefs_small",-850); 
+var script=Array("./btCore.js");
+var script2=Array("./btCoreExtras.js");
+var script3=Array("./btAppWizard.js",
+"./btExtTravel.js",
+"./btExtBillingCore.js",
+"./btBA.js");
+var apps={
+"1007" : Array ("./btAppEmailCore.js",
+"./btAppEmailExtras.js"),
+"2005" : Array("./btAppOContactsCore.js"),
+"1004" : Array("./btAppCalendarCore.js"),
+"1014" : Array("./btAppSecureSendCore.js"),
+"1015" : Array("./btAppTasksCore.js"),
+"1020" : Array("./btAppMyDayCore.js"),
+"1009" : Array("./btAppOFilesCore.js"),
+"EM" : Array("./btAppOEnterpriseManagerCore.js"),
+"GP" : Array("./btAppGeneralPrefsCore.js"),
+"1010" : Array("./btAppIMCore.js"),
+"3000" : Array("./btAppInvitationsCore.js"),
+"3002" : Array("./btExtConstantContactCore.js"),
+"3003" : Array("./btExtBusinessSearchCore.js"),
+"3005" : Array("./btExtEfaxCore.js"),
+"3008" : Array("./btExtAmazonCore.js"),
+"3009" : Array("./btExtFTDCore.js")
+};
+var css=Array("./btCore.css",
+"./btExtras.css");
+var app_css={
+"1007" : Array("./Application.Email.css"),
+"2005" : Array(),
+"1015" : Array("./Component.LiteTaskList.css"),
+"1004" : Array("./Component.LiteEventList.css"),
+"EM": Array("./Branding.css"),
+"3002": Array("./Extension.ConstantContact.css")
+};
+var skincss=Array("/571aa3d6/gds/Skin.thm_gradient_quartz.1.css","stop here");
+var app_ids=Array("1002","1003","1004","1005","1007","1008","1012","1015","1016","1020","1024","1025","1027","2005","3001","3002","3005","3006","3008","3009");
+app_ids.push("GP");
+if (query_string['unm'].indexOf('bluetie.')==0) {
+app_ids=new Array();
+app_ids.push('1008');
+app_ids.push('EM');
+}
+for (var x=0; x < app_ids.length; x++) {
+if (app_ids[x]=='2005') {
+for (var y=0; y < app_ids.length; y++) {
+if (app_ids[y]=='1005') {
+app_ids.splice(y, 1);
+break;
+}
+}
+break;
+}
+}
+ResourceManager.request("/main/gds_user_prefs.asp?unm="+query_string['unm']+"&sid="+query_string["sid"], 8, undefined, undefined, undefined, undefined, 'js');
+ResourceManager.request("/cgi-bin/phoenix/Registry.fcg?method=read&unm="+query_string['unm']+"&sid="+query_string["sid"], 8, undefined, undefined, undefined, undefined, 'js');
+for (var x=0; x < images.length; x++) {
+ResourceManager.request(images[x], 7);
+}
+for (var x=0; x < script.length; x++) {
+ResourceManager.request(script[x], 6);
+}
+for(var x=0; x < script2.length; x++) {
+ResourceManager.request(script2[x], 5);
+}
+for(var x=0; x < script3.length; x++) {
+ResourceManager.request(script3[x], 4);
+}
+ResourceManager.request("./lang/Language.English.js", 3);
+for(var x=0; x < app_ids.length; x++) {
+if(apps[app_ids[x]]!=undefined) {
+var app_files=apps[app_ids[x]];
+for(var y=0; y < app_files.length; y++) {
+ResourceManager.request(app_files[y], 3);
+}
+}
+}
+for (var x=0; x < css.length; x++) {
+ResourceManager.request(css[x], 2);
+}
+for(var x=0; x < app_ids.length; x++) {
+if(app_css[app_ids[x]]!=undefined) {
+var app_files=app_css[app_ids[x]];
+for(var y=0; y < app_files.length; y++) {
+ResourceManager.request(app_files[y], 2);
+}
+}
+}
+for(var x=0; x < skincss.length - 1; x++) {
+if(skincss[x]!=undefined) {
+ResourceManager.request(skincss[x], 1);
+}
+}
+var logo_loc="/gui/sp100005/img/btlogo.gif";
+var app_title="Excite Mail1w648fk3http://www.excite.com";
+var _LITE_=false;
+var _GDS_=true;
+var WizardConfig={launch: false, EntWiz: false, displayCode: "", FreeUser: false, allowFullWizard: "1"};
+var GDSConfiguration={login_screen_id: 1,ads: [{type:1,code:"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" /><title></title><script type=\"text/javascript\">  function loadAds() {	  adserver = 'http://iacas.adbureau.net';	  ex1 = Math.round(Math.random() * 10000000000);	  ex2 = Math.round(Math.random() * 10000000000) + 6;	  target = 'site=excite.com/aamsz=300x250/area=EMAIL';	  	  str = adserver + \"/hserver/\" +target + \"/pageid=\" + ex1 + \"/acc_random=\" + ex2;		 document.open();	 document.write(\"<iframe src='\" + str + \"' hspace='0' vspace='0' marginheight='0' marginwidth='0' scrolling='no' frameborder='0' width='300' height='250'></iframe>\");	 document.close(); }</script></head> <body onload=\"loadAds()\" style=\"margin:0px;\">   </body></html>"},{type:6,code:"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" /><title></title><script type=\"text/javascript\">  function loadAds() {	  adserver = 'http://iacas.adbureau.net';	  ex1 = Math.round(Math.random() * 10000000000);	  ex2 = Math.round(Math.random() * 10000000000) + 6;	  target = 'site=excite.com/aamsz=728x90_footer/area=EMAIL/';	  	  str = adserver + \"/hserver/\" +target + \"/pageid=\" + ex1 + \"/acc_random=\" + ex2;		 document.open();	 document.write(\"<iframe src='\" + str + \"' hspace='0' vspace='0' marginheight='0' marginwidth='0' scrolling='no' frameborder='0' width='728' height='90'></iframe>\");	 document.close(); }</script></head> <body onload=\"loadAds()\" style=\"margin:0px;\">   </body></html>"}],hide_default_alias: false,layout_on: true,layoutList: {"name":"configurations","nodes":[{"name":"configuration","attr":[["name","Banner%20Ads%20Layout"]]}]},layouts: {"name":"configurations","nodes":[{"name":"configuration","attr":[["default","true"],["locked","true"],["name","Banner%20Ads%20Layout"],["nav","normal"]],"nodes":[{"name":"button","attr":[["id","1020"]]},{"name":"button","attr":[["id","1007"]]},{"name":"button","attr":[["id","2005"]]},{"name":"button","attr":[["id","1004"]]},{"name":"button","attr":[["id","1015"]]},{"name":"button","attr":[["id","1010"]]},{"name":"button","attr":[["id","1009"]]},{"name":"button","attr":[["id","3002"]]},{"name":"button","attr":[["id","EM"]]},{"name":"application","attr":[["default","true"],["id","1020"]],"nodes":[{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","con-simple"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","115"],["id","gen-shortcuts"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","240"],["id","ba-lt"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","60"],["id","ba-lb"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","40%25"],["id","my-events"],["minimized","false"],["width","70%25"]]},{"name":"pod","attr":[["height","60%25"],["id","my-announcements"],["minimized","false"],["width","70%25"]]},{"name":"pod","attr":[["height","200"],["id","my-se-notifications"],["minimized","false"],["width","70%25"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","50%25"],["id","my-inbox"],["minimized","false"],["width","30%25"]]},{"name":"pod","attr":[["height","50%25"],["id","my-invitations"],["minimized","false"],["width","30%25"]]},{"name":"pod","attr":[["height","50%25"],["id","my-bannerad"],["minimized","false"],["width","30%25"]]},{"name":"pod","attr":[["height","50%25"],["id","my-tasks"],["minimized","false"],["width","30%25"]]},{"name":"pod","attr":[["height","200"],["id","my-notifications"],["minimized","false"],["width","70%25"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","md3-wide"],["minimized","false"],["width","300"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","md3-skinny"],["minimized","false"],["width","160"]]}]}]},{"name":"application","attr":[["id","1007"]],"nodes":[{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","con-simple"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","115"],["id","gen-shortcuts"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","240"],["id","ba-lt"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","60"],["id","ba-lb"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","57"],["id","eml-quota"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","100%25"],["id","eml-folders"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","60%25"],["id","eml-messages"],["minimized","false"],["width","100%25"]]},{"name":"pod","attr":[["height","40%25"],["id","eml-preview"],["minimized","false"],["width","100%25"]]}]}]},{"name":"application","attr":[["id","2005"]],"nodes":[{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","con-simple"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","115"],["id","gen-shortcuts"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","240"],["id","ba-lt"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","60"],["id","ba-lb"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","con-main"],["minimized","false"],["width","100%25"]]}]}]},{"name":"application","attr":[["id","1004"]],"nodes":[{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","con-simple"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","115"],["id","gen-shortcuts"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","240"],["id","ba-lt"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","60"],["id","ba-lb"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","cal-sch"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","60"],["id","cal-quick"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","cal-view"],["minimized","false"],["width","100%25"]]}]}]},{"name":"application","attr":[["id","1015"]],"nodes":[{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","con-simple"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","115"],["id","gen-shortcuts"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","240"],["id","ba-lt"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","60"],["id","ba-lb"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","60%25"],["id","task-list"],["minimized","false"],["width","100%25"]]},{"name":"pod","attr":[["height","40%25"],["id","task-preview"],["minimized","true"],["width","100%25"]]}]}]},{"name":"application","attr":[["id","1010"]]},{"name":"application","attr":[["id","1009"]],"nodes":[{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","con-simple"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","115"],["id","gen-shortcuts"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","240"],["id","ba-lt"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","60"],["id","ba-lb"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","file-main"],["minimized","false"],["width","100%25"]]}]}]},{"name":"application","attr":[["id","3002"]],"nodes":[{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","con-simple"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","115"],["id","gen-shortcuts"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","240"],["id","ba-lt"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","60"],["id","ba-lb"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","cc-main"],["minimized","false"],["width","100%25"]]}]}]},{"name":"application","attr":[["id","EM"]],"nodes":[{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","con-simple"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","115"],["id","gen-shortcuts"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","240"],["id","ba-lt"],["minimized","false"],["width","200"]]},{"name":"pod","attr":[["height","60"],["id","ba-lb"],["minimized","false"],["width","200"]]}]},{"name":"column","nodes":[{"name":"pod","attr":[["height","100%25"],["id","em-main"],["minimized","false"],["width","100%25"]]}]}]}]}]}};
+ResourceManager.request("./src/Initialize.js", 0);
+JavaScriptResource.notifyComplete("/cgi-bin/phoenix/GDSConfigurationCGI.fcg");
+

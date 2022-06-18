@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<un:pbmstore xmlns:un="http://usablenet.com/namespaces/508as_results">
+  <un:pbmitem>
+    <un:ruleid>DontRelyOnColorAlone</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>0</un:offset1>
+    <un:offset2>55049</un:offset2>
+    <un:linenum>1</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message></un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>ColorsAreVisible</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>0</un:offset1>
+    <un:offset2>55049</un:offset2>
+    <un:linenum>1</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message></un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>StyleSheetsNotNecessary</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>4994</un:offset1>
+    <un:offset2>7875</un:offset2>
+    <un:linenum>194</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page uses style sheets to present its content. Somebrowsers might be unable to understand style sheets, or theprovided style sheets may conflict with user-specified styleinformation.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>StyleSheetsNotNecessary</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>7875</un:offset1>
+    <un:offset2>14711</un:offset2>
+    <un:linenum>260</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page uses style sheets to present its content. Somebrowsers might be unable to understand style sheets, or theprovided style sheets may conflict with user-specified styleinformation.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>StyleSheetsNotNecessary</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>14711</un:offset1>
+    <un:offset2>47940</un:offset2>
+    <un:linenum>415</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page uses style sheets to present its content. Somebrowsers might be unable to understand style sheets, or theprovided style sheets may conflict with user-specified styleinformation.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>StyleSheetsNotNecessary</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>47940</un:offset1>
+    <un:offset2>53388</un:offset2>
+    <un:linenum>470</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page uses style sheets to present its content. Somebrowsers might be unable to understand style sheets, or theprovided style sheets may conflict with user-specified styleinformation.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>StyleSheetsNotNecessary</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>174</un:offset1>
+    <un:offset2>236</un:offset2>
+    <un:linenum>6</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page uses style sheets to present its content. Somebrowsers might be unable to understand style sheets, or theprovided style sheets may conflict with user-specified styleinformation.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>StyleSheetsNotNecessary</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>238</un:offset1>
+    <un:offset2>3798</un:offset2>
+    <un:linenum>7</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page uses style sheets to present its content. Somebrowsers might be unable to understand style sheets, or theprovided style sheets may conflict with user-specified styleinformation.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>5145</un:offset1>
+    <un:offset2>7750</un:offset2>
+    <un:linenum>196</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>5685</un:offset1>
+    <un:offset2>6309</un:offset2>
+    <un:linenum>204</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>6577</un:offset1>
+    <un:offset2>7209</un:offset2>
+    <un:linenum>226</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>8024</un:offset1>
+    <un:offset2>14703</un:offset2>
+    <un:linenum>261</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>8159</un:offset1>
+    <un:offset2>8539</un:offset2>
+    <un:linenum>263</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>8832</un:offset1>
+    <un:offset2>14033</un:offset2>
+    <un:linenum>276</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>14859</un:offset1>
+    <un:offset2>47932</un:offset2>
+    <un:linenum>416</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>14998</un:offset1>
+    <un:offset2>15395</un:offset2>
+    <un:linenum>418</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>15947</un:offset1>
+    <un:offset2>47898</un:offset2>
+    <un:linenum>432</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>48089</un:offset1>
+    <un:offset2>53251</un:offset2>
+    <un:linenum>471</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>48352</un:offset1>
+    <un:offset2>48699</un:offset2>
+    <un:linenum>474</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>49016</un:offset1>
+    <un:offset2>49651</un:offset2>
+    <un:linenum>488</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>49872</un:offset1>
+    <un:offset2>50503</un:offset2>
+    <un:linenum>507</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>50976</un:offset1>
+    <un:offset2>53213</un:offset2>
+    <un:linenum>535</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TableWithHeaders</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>53388</un:offset1>
+    <un:offset2>54977</un:offset2>
+    <un:linenum>569</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains a table that might be used to present data.If this is the case, then the table must have headers forrows and columns (i.e., strings with TH tags).</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>TextOnlyEquivPage</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>3800</un:offset1>
+    <un:offset2>4975</un:offset2>
+    <un:linenum>167</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message></un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>AccessibleScripts</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>53587</un:offset1>
+    <un:offset2>53781</un:offset2>
+    <un:linenum>572</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The 'A' element has an event attribute ('ONCLICK'): check its accessibility.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>AccessibleScripts</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>53831</un:offset1>
+    <un:offset2>54053</un:offset2>
+    <un:linenum>573</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The 'A' element has an event attribute ('ONCLICK'): check its accessibility.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>AccessibleScripts</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>54102</un:offset1>
+    <un:offset2>54289</un:offset2>
+    <un:linenum>574</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The 'A' element has an event attribute ('ONCLICK'): check its accessibility.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>AccessibleScripts</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>54421</un:offset1>
+    <un:offset2>54620</un:offset2>
+    <un:linenum>576</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The 'A' element has an event attribute ('ONCLICK'): check its accessibility.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>AccessibleScripts</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>54670</un:offset1>
+    <un:offset2>54892</un:offset2>
+    <un:linenum>577</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The 'A' element has an event attribute ('ONCLICK'): check its accessibility.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>SkipRepetitiveLinks</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>4986</un:offset1>
+    <un:offset2>55040</un:offset2>
+    <un:linenum>193</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>Check if a textual link is present for skipping navigationallinks that are repeated in all the pages.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>NoFlickeringGIFs</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>4986</un:offset1>
+    <un:offset2>55040</un:offset2>
+    <un:linenum>193</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message>The page contains GIF images: Are they causing the screen toflicker? If so, please modify or remove the images.</un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>NoFlickeringObjects</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>3800</un:offset1>
+    <un:offset2>4975</un:offset2>
+    <un:linenum>167</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message></un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>ClearLangForSite</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>4986</un:offset1>
+    <un:offset2>55040</un:offset2>
+    <un:linenum>193</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message></un:message>
+  </un:pbmitem>
+  <un:pbmitem>
+    <un:ruleid>ClarifyNatLangUsage</un:ruleid>
+    <un:fileurl>file:///F|/DVD1/Util/Curewebwork/Discografía/Discogrseventeen2.htm</un:fileurl>
+    <un:offset1>4986</un:offset1>
+    <un:offset2>55040</un:offset2>
+    <un:linenum>193</un:linenum>
+    <un:status>MANUAL</un:status>
+    <un:message></un:message>
+  </un:pbmitem>
+</un:pbmstore>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MMGuideColor" value="#00FF00" />
+	<infoitem key="MMGuideVisible" value="false" />
+	<infoitem key="MMGuideLocked" value="false" />
+	<infoitem key="MMSnapToGuide" value="true" />
+	<infoitem key="MMGuidesSnapToElements" value="true" />
+	<infoitem key="MMDistanceColor" value="#0000FF" />
+	<infoitem key="UD_conciertos" value="name:seccion;datatype:blob" />
+	<infoitem key="UD_menuFotografico" value="name:nombre;datatype:blob,name:actual;datatype:blob,name:biografía;datatype:blob,name:foto1;datatype:blob,name:foto2;datatype:blob,name:foto3;datatype:blob,name:foto4;datatype:blob,name:foto5;datatype:blob,name:foto6;datatype:blob,name:foto7;datatype:blob,name:foto8;datatype:blob,name:foto9;datatype:blob,name:foto10;datatype:blob,name:foto11;datatype:blob,name:foto12;datatype:blob,name:foto13;datatype:blob,name:foto14;datatype:blob,name:foto15;datatype:blob,name:foto16;datatype:blob,name:foto17;datatype:blob,name:foto18;datatype:blob,name:foto19;datatype:blob,name:foto20;datatype:blob" />
+	<infoitem key="UD_miembrosActuales" value="name:nombre;datatype:blob" />
+	<infoitem key="UD_miembrosAnteriores" value="name:nombre;datatype:blob" />
+	<infoitem key="MMGuideCount" value="0" />
+</info>

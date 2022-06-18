@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>A Cure Of Bloodflowers - The Cure - Singles - The Cure</title>
+<link rel="stylesheet" href="../../general.css" type="text/css" />
+<link rel="stylesheet" href="../generalSinglesPrincipales.css" type="text/css" />
+</head>
+<body class="oneColFixCtrHdr">
+<div id="container">
+<div id="header">
+  <?php include("../../principales/menu_acob.html");?>
+</div>
+<?php include("../singlesindice.htm");?>
+<div id="capaGeneralSingles" style="background-image:url(../fondosSingles/singlesthecurefondo.jpg)">
+   <table width="82%" height="75" border="0" align="center" cellpadding="0" cellspacing="0">
+     <tr>
+<td height="30" align="right" valign="bottom" style="background-color:transparent"><div align="left"><span style="font-size:18px; font-family: Arial, Helvetica, sans-serif; color: #CC0000; margin-right: 5px;"> <span class="single">Singles </span> <span style="background-color: none"><span style="color:#3C76DC; font-size:36px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"><span style="font-weight:100; color: #FFCEA3;"><img src="../../discografia/fotoindice/thecure.jpg" alt="The Cure" width="30" height="30" border="0" /></span></span></span></span><span style="color:#AF8C6E; font-size:36px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"> The Cure </span><span style="font-weight:100; color: #E0CDC6;">(2004)</span></div></td>
+     </tr></table>
+   <br />
+   <br />
+    <br />
+    <br />
+  <table width="82%" border="0" align="center" cellpadding="0" cellspacing="0" class="fondotablas">
+    <tr>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_supizq.jpg" alt="esquina" width="10" /></td>
+      <td style="width:100%;"></td>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_supder.jpg" alt="esquina" width="10" /></td>    </tr>  </table>
+  <table width="82%" align="center" class="fondotablas">
+    <tr>
+     <td valign="top">
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+         <td width="221" valign="top" style="height:0px"><div class="discos" align="left"><img src="thecureDiscography_archivos/teotwsingle.jpg" alt="The end of the world" name="a" width="200" height="200" id="a" /></div></td>
+         <td width="566" valign="top"><div align="left" class="tituloSingle">
+        The end of the world<span class="fecha_negrita"> (Julio/04)</span><span class="fecha">  <br />
+        12 Julio (Alemania) / 19 Julio (UK) - cd single &amp; 7&quot; vinyl picture disc / 20 Julio (USA) -  cd single &amp; 7&quot; vinyl single / 21  Julio (Jap&oacute;n).</span>
+      </div>
+         <div style="width:100%" class="carasb">
+           <br />
+           <br />
+           <br />
+             <span class="nc">Canciones:</span>
+            <ul>
+              <li><span class="canciones">The end of the world</span></li>
+              <li><span class="canciones">This morning</span> <span class="nCatalogo">7&quot; US, 5&quot; CDS USA y JAP, 3&quot; CDS Europe</span></li>
+              <li><span class="canciones">Fake</span> <span class="nCatalogo"> 7&quot; vinyl picture disc UK, 5&quot; CDS USA</span></li>
+              <li><span class="canciones">Truth goodness and beauty </span><span class="nCatalogo">5&quot; CDS JAP</span></li>
+            </ul>
+        </div>           </td>       
+       </tr>
+       <tr>
+         <td colspan="2" style="height:0px"><div align="center"><img src="../division.jpg" alt="division" width="100%" />
+         </div>
+           <div class="explicacionDoble" style="float:left">
+           <span class="nc">N&uacute;meros 
+             de cat&aacute;logo:</span><br />
+             <br />
+           <span class="sn">3&quot; CDS Europe 9862974 ('POCK iT!' series limited edition)<br />
+             5&quot; CDS Europe 828766383829 (promo radio edit 3:31)<br />
+             5&quot; CDS USA  986297585&quot; CDS MEX (promo  radio edit 3:31)</span></div>
+             <div align="left" class="explicacionDoble" style="float:right"><span class="sn"><br />
+               <br />
+               5&quot; CDS JAP 4988005368928 (picture sleeve + obi-strip)<br />
+             7&quot; PICTURE DISC UK 98632505<br />
+             7&quot; USA 98629956</span></div></td>
+         </tr>
+</table></td>    </tr>  </table>
+  <table width="82%" border="0" align="center" cellpadding="0" cellspacing="0" class="fondotablas">
+    <tr>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_infizq.jpg" alt="esquina" width="10" /></td>
+      <td style="width:100%;"></td>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_infder.jpg" alt="esquina" width="10" /></td></tr></table>
+   <br />
+   <br />
+    <br />
+    <br />
+  <p align="center"><a name="1" id="1"></a></p>
+  <table width="82%" border="0" align="center" cellpadding="0" cellspacing="0" class="fondotablas">
+    <tr>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_supizq.jpg" alt="esquina" width="10" /></td>
+      <td style="width:100%;"></td>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_supder.jpg" alt="esquina" width="10" /></td>    </tr>  </table>
+  <table width="82%" align="center" class="fondotablas">
+    <tr>
+     <td valign="top">
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+         <td width="221" valign="top" style="height:0px"><div class="discos" align="left"><img src="thecureDiscography_archivos/altendsingle.jpg" alt="Alt.end" name="b" width="200" height="199" id="b" /></div></td>
+         <td width="566" valign="top"><div align="left" class="tituloSingle">
+        Alt.end<span class="fecha_negrita"> (Octubre/04)</span><span class="fecha"> - 12 Oct. (USA).</span>
+      </div>
+         <div style="width:100%" class="carasb">
+           <br />
+           <br />
+           <br />
+             <span class="nc">Canciones:</span>
+            <ul>
+              <li><span class="canciones">Taking off</span></li>
+              <li><span class="canciones">Why can't I be me?</span> <span class="nCatalogo">5&quot; CDS US</span></li>
+              <li><span class="canciones">Your God is fear</span> <span class="nCatalogo"> 5&quot; CDS US</span></li>
+            </ul>
+        </div>           </td>       
+       </tr>
+       <tr>
+         <td colspan="2" style="height:0px"><img src="../division.jpg" alt="division" width="100%" />
+           <div class="explicacionSimple">
+           <span class="nc">N&uacute;meros 
+             de cat&aacute;logo:</span><br />
+             <br />
+           <span class="sn">5&quot; CDS USA (1-track promo  3:00 version)<br />
+             5&quot; CDS USA 98643808             </span></div>
+             </td>
+       </tr>
+</table></td>    </tr>  </table>
+  <table width="82%" border="0" align="center" cellpadding="0" cellspacing="0" class="fondotablas">
+    <tr>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_infizq.jpg" alt="esquina" width="10" /></td>
+      <td style="width:100%;"></td>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_infder.jpg" alt="esquina" width="10" /></td></tr></table>
+   <br />
+   <br />
+    <br />
+    <br />
+  <p align="center"><a name="2" id="2"></a></p>
+  <table width="82%" border="0" align="center" cellpadding="0" cellspacing="0" class="fondotablas">
+    <tr>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_supizq.jpg" alt="esquina" width="10" /></td>
+      <td style="width:100%;"></td>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_supder.jpg" alt="esquina" width="10" /></td>    </tr>  </table>
+  <table width="82%" align="center" class="fondotablas">
+    <tr>
+     <td valign="top">
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+         <td width="221" valign="top" style="height:0px"><div class="discos" align="left"><img src="thecureDiscography_archivos/Takingoffsingle.jpg" alt="Taking off" name="c" width="200" height="175" id="c" /></div></td>
+         <td width="566" valign="top"><div align="left" class="tituloSingle">
+        Taking off<span class="fecha_negrita"> (Octubre/04)</span><span class="fecha">   - 
+        18 Oct. (Europa).</span>
+      </div>
+         <div style="width:100%" class="carasb">
+           <br />
+           <br />
+           <br />
+             <span class="nc">Canciones:</span>
+            <ul>
+              <li><span class="canciones">Taking off</span></li>
+              <li><span class="canciones">Why can't I be me?</span> <span class="nCatalogo">7&quot; picture disc UK, 5&quot; CDS UK</span></li>
+              <li><span class="canciones">Your God is fear</span> <span class="nCatalogo"> 5&quot; CDS UK</span></li>
+              <li><span class="canciones">Taking off (CD Rom Video) </span><span class="nCatalogo">5&quot; CDS UK</span>
+            </ul>
+        </div>           </td>       
+       </tr>
+       <tr>
+         <td colspan="2" style="height:0px"><img src="../division.jpg" alt="division" width="100%" />
+           <div class="explicacionSimple">
+           <span class="nc">N&uacute;meros 
+             de cat&aacute;logo:</span><br />
+             <br />
+           <span class="sn">5&quot; CDS MEX CDP201528 (rare Mexican exclusive 4-track promo-only sampler CD)<br />
+            5&quot; CDS UK CURE5 (Geffen label 1-track promo)<br>
+            5&quot; CDS UK 9864491<br>
+            7&quot; PICTURE DISC UK 9864601</span></div>
+             </td>
+       </tr>
+</table></td>    </tr>  </table>
+  <table width="82%" border="0" align="center" cellpadding="0" cellspacing="0" class="fondotablas">
+    <tr>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_infizq.jpg" alt="esquina" width="10" /></td>
+      <td style="width:100%;"></td>
+      <td style="width:0px; vertical-align:bottom;"><img src="http://localhost/curewebwork2/singles/esquina_infder.jpg" alt="esquina" width="10" /></td></tr></table>
+    <br />
+    <br />
+    <br />
+</div>
+<div id="footer">
+  <?php include("../../principales/pie_acob.html");?>
+</div>
+<!-- end #container -->
+</div>
+</body>
+</html>
